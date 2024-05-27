@@ -1,0 +1,36 @@
+.loading-main-cont{
+    background-image: url("../../assets/Images/LoadingBg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.loading-img{
+    width: 25rem;
+   
+}
+
+.loading-title{
+    width: 20rem;
+
+}
+
+
+@media screen and (max-width:890px){
+    .loading-main-cont{
+        background-image: none;
+        background: linear-gradient(180deg, #27D0FB 0%, rgba(217, 217, 217, 0) 100%);
+
+    }
+    .loading-img{
+        width: 90%;
+    }
+    .loading-title{
+        width: 80%;
+    }
+    
+}
