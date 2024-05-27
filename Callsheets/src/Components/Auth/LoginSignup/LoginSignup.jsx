@@ -7,9 +7,9 @@ function LoginSignup() {
     const navigate=useNavigate();
   return (
     <div className='loginsignup-cont'>
-        <div className='logo'>
+        {/* <div className='logo'>
             <img src={logo} alt="logo" />
-        </div>
+        </div> */}
         <div className='flex-container'>
             <div className='content'>
                 <h2>Call sheets</h2>
