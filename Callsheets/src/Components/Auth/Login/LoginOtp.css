@@ -1,0 +1,103 @@
+.login-otp-main-cont{
+    background-image: url("../../../assets/Images/LoginOtpBg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.login-otp-center-cont{
+    background: linear-gradient(172.78deg, #C7D7E8 24.32%, #EAEBF0 100.34%);
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding:2%;
+
+}
+
+.login-otp-center-cont  .login-header{
+   
+    align-self: flex-start;
+    
+    
+}
+
+.login-otp-center-cont .otp-text{
+    font-weight: 500;
+    font-size: 0.8rem;
+    width: 80%;
+    text-align: center;
+    font-weight: 550;
+    line-height: 1.5;
+
+}
+
+.login-otp-center-cont input[type='text']{
+    width:2.2rem !important;
+    height: 2.2rem;
+    border: none;
+    border-radius: 0.4rem;
+    box-shadow: 0px 0px 2px 0px rgb(187, 187, 187);
+    font-size: 1.5rem;
+
+
+}
+
+
+.login-otp-center-cont .otp-time-expire{
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.otp-text-signup{
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+.otp-text-signup span{
+    font-weight: 600;
+    color:blue;
+    cursor: pointer;
+}
+
+.otp-text-signup span:hover{
+    text-decoration: underline;
+}
+
+
+
+@media screen and (max-width:768px){
+    .login-otp-main-cont{
+        height: 100vh;
+        flex: 0 1 auto;
+    }
+    .login-otp-center-cont{
+        background: none;
+        color:#F8F8F8;
+    }
+
+
+    .login-otp-center-cont input[type='text']{
+        width:3rem !important;
+        height: 3rem;
+        border: none;
+        border-radius: 0.4rem;
+        box-shadow: 0px 0px 2px 0px rgb(187, 187, 187);
+        font-size: 1.5rem;
+
+    }
+
+    .otp-numpad{
+        flex:1 1 auto;
+        
+
+    }
+    
+
+}
+
+
+
