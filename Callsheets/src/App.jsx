@@ -1,12 +1,12 @@
-import React from 'react';
-import LoginSignupPage from './Pages/LoginSignup/LoginSignupPage';
-import { useState } from 'react'
-import { BrowserRouter as Router, Route,Routes} from 'react-router-dom'
 
+
+
+import React,{ useState } from 'react'
+import { BrowserRouter as Router, Route,Routes} from 'react-router-dom'
 import './App.css'
 import Loading from './Components/Loading/Loading'
 import LoginOtp from './Components/Auth/Login/LoginOtp'
-
+import LoginSignupPage from './Pages/LoginSignup/LoginSignupPage';
 
 function App() {
 
@@ -24,6 +24,7 @@ function App() {
             </Routes>
         </Router>
       
+
     </>
   )
 }

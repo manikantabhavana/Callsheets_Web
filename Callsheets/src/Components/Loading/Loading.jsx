@@ -8,7 +8,9 @@ import LoadingTitle from "../../Assets/Images/LoadingTitle.png";
 function Loading() {
     const navigate=useNavigate()
     setTimeout(()=>{
+
         navigate('/loginsignup')
+
     },2000)
 
 
