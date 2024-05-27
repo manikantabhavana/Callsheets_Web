@@ -1,8 +1,10 @@
 import React from 'react';
-import './LoginSignup.css'
+import './LoginSignup.css';
+import {useNavigate} from 'react-router-dom';
 import logo from '../../../Assets/Images/CallSheet/Logo.png'
 
 function LoginSignup() {
+    const navigate=useNavigate();
   return (
     <div className='loginsignup-cont'>
         <div className='logo'>
@@ -23,7 +25,7 @@ function LoginSignup() {
             </div>
             <div className='login-signup'>
                 <div className='login'>
-                    <button className='login-btn'>Login</button>
+                    <button className='login-btn' onClick={()=>{navigate('/login-otp')}}>Login</button>
                 </div>
                 <div className='signup'>
                     <button className='signup-btn'>SignUp</button>

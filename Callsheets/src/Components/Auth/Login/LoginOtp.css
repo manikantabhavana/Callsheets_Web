@@ -1,5 +1,5 @@
 .login-otp-main-cont{
-    background-image: url("../../../assets/Images/LoginOtpBg.png");
+    background-image: url("../../../Assets/Images/LoginOtpBg.png");
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -7,7 +7,6 @@
     justify-content: center;
     height: 100vh;
 }
-
 .login-otp-center-cont{
     background: linear-gradient(172.78deg, #C7D7E8 24.32%, #EAEBF0 100.34%);
     border-radius: 0.5rem;
@@ -66,8 +65,6 @@
 .otp-text-signup span:hover{
     text-decoration: underline;
 }
-
-
 
 @media screen and (max-width:768px){
     .login-otp-main-cont{
