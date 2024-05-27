@@ -9,7 +9,7 @@ function Loading() {
     const navigate=useNavigate()
     setTimeout(()=>{
         navigate('/login-otp')
-    },5000)
+    },2000)
 
 
 
