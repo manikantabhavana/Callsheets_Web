@@ -1,15 +1,15 @@
 import React from 'react';
 import {useNavigate} from 'react-router-dom'
 import './Loading.css';
-import LoadingImg from "../../assets/Images/LoadingImg.png";
-import LoadingTitle from "../../assets/Images/LoadingTitle.png";
+import LoadingImg from "../../Assets/Images/LoadingImg.png";
+import LoadingTitle from "../../Assets/Images/LoadingTitle.png";
 
 
 function Loading() {
     const navigate=useNavigate()
     setTimeout(()=>{
-        navigate('/login-otp')
-    },5000)
+        navigate('/loginsignup')
+    },2000)
 
 
 
