@@ -26,7 +26,11 @@ function LoginSignup() {
             <div className='login-signup'>
               
                     <button className='login-btn' onClick={()=>{navigate('/login')}}>Login</button>
+<<<<<<< HEAD
                     <button className='signup-btn' onClick={()=>{navigate('/login')}}>SignUp</button>
+=======
+                    <button className='signup-btn'>SignUp</button>
+>>>>>>> 69fdfdb8e764b62cbde8c36d69c092050c8ba7b0
             </div>
 
         </div>

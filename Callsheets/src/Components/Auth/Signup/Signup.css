@@ -55,10 +55,11 @@
 .login-center-cont .confirm-btn{
   
 }
-@media screen and (max-width:768px){
+@media screen and (max-width:890px){
     .signup-main-cont{
         height: 100vh;
         flex: 0 1 auto;
+        background: url("../../../Assets/Images/mobile_view_bg_sign.png");
     }
     .signup-center-cont  .login-header{
         align-self: center;
@@ -82,4 +83,14 @@
         text-align: center;
         padding: 4%;
     }
+}
+
+
+@media screen  and (min-width:767px ) and (max-width:890px){
+    .signup-main-cont{
+        background-size: cover;
+      background-position:center;
+        background-repeat: no-repeat;
+    }
+    
 }

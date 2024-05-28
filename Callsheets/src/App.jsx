@@ -7,6 +7,7 @@ import LoginSignupPage from './Pages/LoginSignup/LoginSignupPage';
 import LoginPage from './Pages/Login/LoginPage'
 import SignupPage from './Pages/Signup/SignupPage'
 import RegistrationPage from './Pages/Registration/RegistrationPage'
+import SignupOtp from './Components/Auth/Signup/SignupOtp'
 
 function App() {
 
@@ -21,6 +22,7 @@ function App() {
                 <Route path='/loginsignup' element={<LoginSignupPage/>}/>
                 <Route path='/login-otp' element={<LoginOtp/>}/>
                 <Route path='/signup' element={<SignupPage/>}/>
+                <Route path='/signup-otp' element={<SignupOtp/>}/>
                 <Route path ='/registration' element={<RegistrationPage/>}/>
 
             </Routes>

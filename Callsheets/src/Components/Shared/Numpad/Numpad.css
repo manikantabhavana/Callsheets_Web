@@ -8,7 +8,7 @@
     flex: 1;
     width: 100%;
     justify-content: space-between; 
-    background: linear-gradient(177.49deg, #C7D7E8 22.95%, #EAEBF0 112.68%);
+    background: linear-gradient(172.78deg, #C7D7E8 24.32%, #EAEBF0 100.34%);
     border-radius: 2rem 2rem 0 0 ;
   }
   
@@ -39,8 +39,10 @@
         display: grid;
         grid-template-columns: repeat(3,1fr);
         width: 100vw;
-        background: linear-gradient(177.49deg, #C7D7E8 22.95%, #EAEBF0 112.68%);
+        background: linear-gradient(172.78deg, #cdd5e0 24.32%, #EAEBF0 100.34%);
+        background: #EAEBF0 ;
         min-height: 43vh !important;
+       
     }
     
   }

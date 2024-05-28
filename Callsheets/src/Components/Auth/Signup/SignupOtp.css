@@ -1,5 +1,5 @@
-.login-otp-main-cont{
-    background-image: url("../../../Assets/Images/LoginOtpBg.png");
+.signup-otp-main-cont{
+    background-image: url("../../../Assets/Images/SignupBg.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -9,7 +9,7 @@
     height: 100vh;
     overflow: hidden;
 }
-.login-otp-center-cont{
+.signup-otp-center-cont{
     background: linear-gradient(172.78deg, #C7D7E8 24.32%, #EAEBF0 100.34%);
     border-radius: 0.5rem;
     display: flex;
@@ -20,14 +20,14 @@
 
 }
 
-.login-otp-center-cont  .login-header{
+.signup-otp-center-cont  .signup-header{
    
     align-self: flex-start;
     
     
 }
 
-.login-otp-center-cont .otp-text{
+.signup-otp-center-cont .otp-text{
     font-weight: 500;
     font-size: 0.8rem;
     width: 80%;
@@ -37,7 +37,7 @@
 
 }
 
-.login-otp-center-cont input[type='text']{
+.signup-otp-center-cont input[type='text']{
     width:2.2rem !important;
     height: 2.2rem;
     border: none;
@@ -49,7 +49,7 @@
 }
 
 
-.login-otp-center-cont .otp-time-expire{
+.signup-otp-center-cont .otp-time-expire{
     font-size: 0.8rem;
     font-weight: 600;
 }
@@ -69,31 +69,31 @@
 }
 
 @media screen and (max-width:890px){
-    .login-otp-main-cont{
+    .signup-otp-main-cont{
         height: 100vh;
         flex-direction: column;
         width: 100vw;
         background-size:100% 70%;
         background-position: top;
-        background-image: url("../../../Assets/Images/mobile_view_bg_login.png");
+        background: url("../../../Assets/Images/mobile_view_bg_sign.png");
        
         
         
 
     }
-    .login-otp-center-cont{
+    .signup-otp-center-cont{
         background: none;
         color:#F8F8F8;
         width: 90%;
         padding-left: 5%; 
         height: 60%;
     }
-    .login-header{
+    .signup-header{
         font-size: 8vw !important;
     }
 
 
-    .login-otp-center-cont input[type='text']{
+    .signup-otp-center-cont input[type='text']{
         width: 14vw !important;
         height: 14vw;
         max-width: 3rem;
@@ -115,12 +115,13 @@
 
 
 @media screen and (min-width:767px) and (max-width:890px){
-    .login-otp-main-cont{
+    .signup-otp-main-cont{
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
+
     }
-    .login-otp-center-cont input[type='text']{
+    .signup-otp-center-cont input[type='text']{
         font-size: 5vw;
 
     }

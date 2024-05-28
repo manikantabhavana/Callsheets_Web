@@ -18,7 +18,7 @@ const Numpad = ({ onKeyPress }) => {
         className={`key ${key === 'DEL' ? 'delete' : ''}`}
         onClick={() => onKeyPress(key)}
       >
-        {key === 'DEL' ? <Icon icon="jam:delete-f"  style={{color: 'black',fontSize:'10vw'}} /> : key}
+        {key === 'DEL' ? <Icon icon="jam:delete-f"  style={{color: 'black',fontSize:'10vw'}} /> :(key==''?<Icon icon="oui:arrow-down"  style={{color: 'black',fontSize:'10vw'}} />: key)}
       </div>
       ))}
     </div>

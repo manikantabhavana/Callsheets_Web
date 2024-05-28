@@ -13,6 +13,7 @@
 .registration-main-cont .registration-details{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     flex: 0.5;
     align-items: center;
     padding: 2% 10% 0 0 ;
@@ -81,4 +82,60 @@
 }
 .registration-main-cont .registration-details .continue-btn{
     padding: 4% 43%;
+}
+
+
+@media screen and (max-width:890px) {
+    .registration-main-cont .registration-image{
+      
+        display: none;
+        flex: 0;
+    }
+    .registration-main-cont{
+        background-image: url("../../../Assets/Images/Registration/RegistrationBg.png");
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .registration-main-cont .registration-details{
+        flex: 0.4;
+        
+        width: max-content;
+        height: max-content;
+        padding:5%;
+        border-radius: 2rem;
+       
+
+      
+    }
+
+    .registration-main-cont .registration-details .input input[type='text']{
+        width: 75vw !important;
+    }
+    .registration-main-cont .registration-details .input input[type='date']{
+        width: 75vw !important;
+    }
+    .registration-main-cont .registration-details h1{
+        margin-left: 0rem;
+    }
+    .registration-main-cont .registration-details .input{
+       
+        padding: 4% 0%;
+       
+    }
+
+    .registration-main-cont .registration-details .continue-btn{
+        padding:4% 0;
+        text-align: center;
+        width: 90%;
+        margin-left: 5%;
+        
+    }
+
+
+
+
+
+    
 }
