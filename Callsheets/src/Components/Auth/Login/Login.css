@@ -6,6 +6,7 @@
     align-items: center;
     justify-content: center;
     height: 100vh;
+    overflow: hidden;
 }
 .login-center-cont{
     background: linear-gradient(172.78deg, #C7D7E8 24.32%, #EAEBF0 100.34%);
@@ -14,24 +15,24 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding:2%;
+    padding:5%;
 }
 .login-center-cont  .login-header{  
-    align-self: flex-start;    
+    align-self: flex-start;   
+    font-size: 1.5rem;
 }
-.login-center-cont .otp-text{
+.login-center-cont .mobile-number-text{
     font-weight: 500;
     font-size: 1rem;
     align-self: flex-start;
-   
     font-weight: 550;
     line-height: 1.5;
-
     display: flex; 
    color: #2B2B2B73 ;
+   align-items: center;
 
 }
-.login-center-cont .otp-text .mbl-icon{
+.login-center-cont .mobile-number-text .mbl-icon{
     font-size: 1.5rem;
     color: black;
 }
@@ -45,49 +46,196 @@
     padding:3.5% 2%;
     width: 99%;
     box-sizing: border-box;
-    margin-top: -2rem;
+   
     margin-bottom: 1.3rem;
     background: linear-gradient(172.78deg, #C7D7E8 24.32%, #EAEBF0 100.34%);
 
 }
-.login-center-cont .confirm-btn{
+.login-center-cont  .continue-btn{
+    width: 100% !important;
+    text-align: center;
+    border-radius: 1rem;
+   
   
 }
 @media screen and (max-width:890px){
     .login-main-cont{
         height: 100vh;
-        flex: 0 1 auto;
-    }
-    .login-center-cont  .login-header{
-        align-self: center;
-    }
-
-   
-    .otp-numpad{
-        flex:1 1 auto;
-    }
-    .login-center-cont input[type='text']{
-        width: 90%;
-    }
-
-    .otp-numpad{
-        flex:1 1 auto;
-    }
-    .login-center-cont{
-     border-radius: 3rem 3rem 0 0;
+        width: 100%;
+        flex-direction: column;
+        background: url("../../../Assets/Images/mobile_view_bg_login.png");
+        background-size: contain;
+        position: relative ;
        
     }
+
+    .input-and-numpad{
+        width: 100%;
+    }
+    .login-center-cont .mobile-number-text{
+        margin-left: 5%;
+        font-size: 4vw;
+        align-items: center;
+       
+    }
+
+
+    .login-center-cont{
+       width: 100%;
+       border-radius: 3rem;
+       background: linear-gradient(172.78deg, #C7D7E8 24.32%, #EAEBF0 100.34%) ;
+       padding:1% 0;
+     
+       transition: transform 0.5s ease;
+     
+
+
+    }
+
+
+    .login-center-cont.move-up-input {
+        
+        transform: translateY(-50%);
+       
+       
+        
+      }
+    .login-center-cont  .login-header{
+        align-self: center;
+        font-size:3vw;
+        
+        
+    }
+
+    .input-and-numpad.show-number-pad{
+    background: #EAEBF0;
+
+    }
+
     .login-center-cont input[type='text']{
         border: none;
-        border-bottom: 2px solid black;
+        width: 90%;
+        border-bottom: 1.5px solid black;
+        border-radius:0;
         box-shadow: none;
         background: none;
+        outline: none;
+        font-size: 5vw;
 
     }
     .login-center-cont .continue-btn{
-        width:90%;
+        width:90% !important;
         align-self: center;
         text-align: center;
-        padding: 4%;
+        padding: 5%;
+        border-radius: 3rem;
+        font-size: 1rem;
     }
+
+    .login-main-cont .child{
+        transition: all 0.5s ease;
+    }
+
+    .numpad-login {
+        position: absolute;
+        bottom: -100%; /* Hidden initially */
+        left: 0;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        background-color: #fff; /* Customize as needed */
+        transition: bottom 0.5s ease;
+      }
+      
+      .numpad-login.show-number-pad {
+        bottom: 0;
+        background: #EAEBF0 ;
+      }
+      .login-main-cont {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        position: relative;
+        overflow: hidden;
+      }
+      
+      .input-and-numpad {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: transform 0.5s ease;
+      }
+      
+      .login-center-cont, .numpad-login {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      
+      .login-center-cont {
+        margin-bottom: 20px;
+      }
+      
+      .numpad-login {
+        position: absolute;
+        bottom: -100%; /* Hidden initially */
+        width: 100%;
+        transition: bottom 0.5s ease;
+      }
+      
+      .numpad-login.show-number-pad{
+        bottom: 0;
+        
+      }
+      
+      .input-and-numpad.show-number-pad .login-center-cont {
+        transform: translateY(-100px);
+        border-radius: 2rem 2rem 0 0; 
+      }
+      
+      
+      
+   
+
 }
+
+
+@media screen  and (min-width:767px) and (max-width:890px){
+
+    .login-main-cont{
+        background-size: cover;
+        background-repeat: no-repeat;
+       
+    }
+    .input-and-numpad.show-number-pad .login-center-cont {
+        transform: translateY(-210px);
+       
+      }
+      .login-center-cont input[type='text']{
+     
+        width: 50%;
+    }
+    .login-center-cont .continue-btn{
+        width:50% !important;
+        font-size: 2rem;
+        padding: 2%;
+       
+    }
+    .login-center-cont .mobile-number-text{
+        margin-left: 25%;
+        font-size: 5vw;
+        line-height: 0.1;
+       
+    }
+    .mobile-number-text .mbl-icon{
+        font-size: 5vw !important;
+    }
+
+}
+    

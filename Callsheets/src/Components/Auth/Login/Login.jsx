@@ -1,12 +1,16 @@
-import React,{useState}from 'react';
+import React,{useState,useEffect,useRef}from 'react';
 import './Login.css';
 import { Icon } from '@iconify/react';
 import {useNavigate} from 'react-router-dom'
 import ContinueBtn from '../../Shared/ContinueBtn/ContinueBtn';
 import Numpad from '../../Shared/Numpad/Numpad';
 function Login() {
-  const navigate=useNavigate()
-  const [otp, setOtp] = useState('');
+  const navigate=useNavigate();
+  const containerRef = useRef(null);
+  const numpadRef = useRef(null);
+  const [mobileNumber, setMobileNumber] = useState('');
+  const [showNumberPad, setShowNumberPad] = useState(false);
+  const [isMobileDevice, setIsMobileDevice] = useState(false);
 
   const goToSignup=()=>{
       navigate('sign-up')
@@ -17,27 +21,70 @@ function Login() {
   const handleKeyPress = (key) => {
     if (key === 'DEL') {
       
-      setOtp(otp.slice(0, -1));
-    } else if (otp.length < 4) {
+      setMobileNumber(mobileNumber.slice(0, -1));
+    }
+    else if(key===''){
+      handleBlurInput()
+
+    } else if (mobileNumber.length < 10) {
    
-      setOtp(otp + key);
+      setMobileNumber(mobileNumber + key);
     }
   };
+
+  const handleFocusInput = () => {
+    setShowNumberPad(true);
+  };
+
+
+
+
+  useEffect(() => {
+    const checkIsMobile = () => {
+      setIsMobileDevice(window.innerWidth <= 890);
+    };
+    checkIsMobile();
+    window.addEventListener('resize', checkIsMobile);
+
+    return () => window.removeEventListener('resize', checkIsMobile);
+  }, []);
+
+
+ 
+  const handleBlurInput = () => {
+    setShowNumberPad(false)
+   
+  };
+
+ 
   return (
    <>
-      <div className='login-main-cont'>
-      <div className='login-center-cont'>
-            <h1 className='login-header'>Log In</h1>
-            <p className='otp-text'> <p><Icon icon="clarity:mobile-solid" className='mbl-icon' /> </p> <p>Mobile number</p></p>
-            <input type="text" placeholder='+91' /> 
-                      
-            <ContinueBtn onClick={goToLoginOtp}/>
-            <p className='otp-text-signup'>Don’t have an account? <span onClick={goToSignup}> Sign up!</span></p>
-            <Numpad className='otp-numpad' onKeyPress={handleKeyPress} />
+      <div className='login-main-cont' >
+      <div className={`input-and-numpad ${showNumberPad ? 'show-number-pad' : ''}`}  >
+        <div className={`child login-center-cont ${showNumberPad ? 'move-up-input' : ''}`}>
+              <h1 className='login-header'>Log In</h1>
+              <div className='mobile-number-text'> 
+                  <Icon icon="clarity:mobile-solid" className='mbl-icon' />
+                  <p>Mobile number</p>
+              </div>
+              <input type="text"
+               placeholder='+91'
+                onFocus={handleFocusInput}
+                
+                 value={mobileNumber}
+                 onChange={(e)=>{setMobileNumber(e.target.value)}}
+                readOnly={isMobileDevice}/> 
+                        
+              <ContinueBtn onClick={goToLoginOtp}/>
+              <p className='otp-text-signup'>Don’t have an account? <span onClick={goToSignup}> Sign up!</span></p>
           
+            
 
-        </div>
-
+          </div>
+          <div className={`child numpad-login ${showNumberPad ? 'show-number-pad' : ''}`} ref={numpadRef}>
+            <Numpad   onKeyPress={handleKeyPress}  />
+          </div>
+          </div>
       </div>
    
    </>
