@@ -4,12 +4,19 @@
   .number-pad {
     display: none;
     flex-wrap: wrap;
+<<<<<<< HEAD
+    gap: 10px;
+    border-radius: 2rem 2rem 0 0rem;
+  
+    
+=======
     flex: 1;
     width: 100%;
     justify-content: space-between; 
     background: linear-gradient(177.49deg, #C7D7E8 22.95%, #EAEBF0 112.68%);
     border-radius: 2rem 2rem 0 0 ;
 
+>>>>>>> f59f0f2449256181f9ec9d19b90250c7c726257f
   }
   
   .key {
@@ -22,6 +29,11 @@
     font-size: 8vw;
     color: black;
     font-weight: 550;
+<<<<<<< HEAD
+    padding: 0.2rem;
+
+=======
+>>>>>>> f59f0f2449256181f9ec9d19b90250c7c726257f
   }
   
   .key:hover {
@@ -36,7 +48,14 @@
     .number-pad{
         display: grid;
         grid-template-columns: repeat(3,1fr);
+<<<<<<< HEAD
+        row-gap: 3rem;
+        width: 98vw;
+        background: linear-gradient(177.49deg, #C7D7E8 22.95%, #EAEBF0 112.68%);
+
+=======
         min-height: 40vh !important;
+>>>>>>> f59f0f2449256181f9ec9d19b90250c7c726257f
     }
     
   }
