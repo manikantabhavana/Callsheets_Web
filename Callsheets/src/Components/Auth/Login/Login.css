@@ -10,8 +10,7 @@
 .login-center-cont{
     background: linear-gradient(172.78deg, #C7D7E8 24.32%, #EAEBF0 100.34%);
     border-radius: 1rem ;
-    /* border-top-left-radius: 3rem;
-    border-top-right-radius: 3rem; */
+   
     display: flex;
     flex-direction: column;
     align-items: center;

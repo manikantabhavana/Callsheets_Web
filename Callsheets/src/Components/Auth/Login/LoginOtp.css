@@ -2,6 +2,7 @@
     background-image: url("../../../Assets/Images/LoginOtpBg.png");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -72,6 +73,12 @@
         height: 100vh;
         flex-direction: column;
         width: 100vw;
+        background-size:100% 60%;
+        background-position: top;
+       
+        
+        
+
     }
     .login-otp-center-cont{
         background: none;

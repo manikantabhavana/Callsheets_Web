@@ -35,11 +35,12 @@
  
   @media screen  and (max-width:890px){
     .number-pad{
+   
         display: grid;
         grid-template-columns: repeat(3,1fr);
-        width: 98vw;
+        width: 100vw;
         background: linear-gradient(177.49deg, #C7D7E8 22.95%, #EAEBF0 112.68%);
-        min-height: 40vh !important;
+        min-height: 43vh !important;
     }
     
   }
