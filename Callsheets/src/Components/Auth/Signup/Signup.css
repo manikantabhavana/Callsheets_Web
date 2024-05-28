@@ -1,5 +1,5 @@
-.login-main-cont{
-    background-image: url("../../../Assets/Images/LoginOtpBg.png");
+.signup-main-cont{
+    background-image: url("../../../Assets/Images/SignupBg.png");
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -7,44 +7,46 @@
     justify-content: center;
     height: 100vh;
 }
-.login-center-cont{
+.signup-center-cont{
     background: linear-gradient(172.78deg, #C7D7E8 24.32%, #EAEBF0 100.34%);
     border-radius: 1rem ;
+   
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding:2%;
+   
+ 
 }
-.login-center-cont  .login-header{  
-    align-self: flex-start;    
+.signup-center-cont  .login-header{  
+    align-self: flex-start; 
+    text-align: left;   
 }
-.login-center-cont .otp-text{
+.signup-center-cont .otp-text{
     font-weight: 500;
     font-size: 1rem;
-    align-self: flex-start;
-   
+    width: 80%;
+    text-align: left;
     font-weight: 550;
     line-height: 1.5;
-
+    margin-left: -3rem;
     display: flex; 
    color: #2B2B2B73 ;
 
 }
-.login-center-cont .otp-text .mbl-icon{
+.signup-center-cont .otp-text .mbl-icon{
     font-size: 1.5rem;
     color: black;
 }
-.login-center-cont input[type='text']{
-   
-
+.signup-center-cont input[type='text']{
+    width:17rem !important;
+    height: 2.5rem;
     border: 1px solid black;
     border-radius: 0.4rem;
     box-shadow: 0px 0px 2px 0px rgb(187, 187, 187);
     font-size: 1.5rem;
-    padding:3.5% 2%;
-    width: 99%;
-    box-sizing: border-box;
+    padding: 0.4rem;
     margin-top: -2rem;
     margin-bottom: 1.3rem;
     background: linear-gradient(172.78deg, #C7D7E8 24.32%, #EAEBF0 100.34%);
@@ -53,39 +55,29 @@
 .login-center-cont .confirm-btn{
   
 }
-@media screen and (max-width:890px){
-    .login-main-cont{
+@media screen and (max-width:768px){
+    .signup-main-cont{
         height: 100vh;
         flex: 0 1 auto;
     }
-    .login-center-cont  .login-header{
+    .signup-center-cont  .login-header{
         align-self: center;
     }
-
-   
     .otp-numpad{
         flex:1 1 auto;
     }
-    .login-center-cont input[type='text']{
-        width: 90%;
-    }
-
-    .otp-numpad{
-        flex:1 1 auto;
-    }
-    .login-center-cont{
+    .signup-center-cont{
      border-radius: 3rem 3rem 0 0;
        
     }
-    .login-center-cont input[type='text']{
+    .signup-center-cont input[type='text']{
         border: none;
         border-bottom: 2px solid black;
         box-shadow: none;
         background: none;
-
     }
-    .login-center-cont .continue-btn{
-        width:90%;
+    .signup-center-cont .continue-btn{
+        width: 16rem !important;
         align-self: center;
         text-align: center;
         padding: 4%;
