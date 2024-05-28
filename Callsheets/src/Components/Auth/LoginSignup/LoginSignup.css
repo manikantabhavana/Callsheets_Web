@@ -1,14 +1,9 @@
 .loginsignup-cont{
   background-image: url("../../../Assets/Images/CallSheet/Mainpage_BG.png");
-<<<<<<< HEAD
-  height: auto;
   width: 100vw;
-  
-=======
   height: 100vh;
   box-sizing: border-box;
-  /* width: 100vw; */
->>>>>>> 2f31703dfe1742e04a08f6ef0b8db75e36fa08bf
+
 }
 
 .loginsignup-cont .flex-container{
