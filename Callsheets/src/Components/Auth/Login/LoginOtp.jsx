@@ -44,13 +44,7 @@ function LoginOtp() {
         <div className='login-otp-center-cont'>
 
 
-            <h1 className='login-header'>Log In</h1> 
-
-            <div>test</div>
-            <h1 className='login-header'>Log In</h1>
-
-
-            <h1 className='login-header'>Log In</h1> 
+      
             <div>test</div>
             <h1 className='login-header'>Log In</h1>
 
