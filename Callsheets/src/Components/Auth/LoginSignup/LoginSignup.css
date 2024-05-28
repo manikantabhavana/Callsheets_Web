@@ -16,13 +16,13 @@
     justify-content: space-evenly;
     /* padding-bottom: 9%;
     padding-top: 8%; */
-    width: 100%;
+    /* width: 100%; */
     box-sizing: border-box;
  
 }  
 .loginsignup-cont .flex-container .content{
-    width: 50%;
-    margin-left:-25%;
+    /* width: 50%;
+    margin-left:-25%; */
     color: #E1E1E1;
     box-sizing: border-box;
 } 
@@ -34,40 +34,40 @@
     font-size: 1.2rem;
     font-weight: 50;
     line-height: 150%;
-    margin-top: -6%;
-    padding-right: 10%;
+    /* margin-top: -6%; */
+    /* padding-right: 10%; */
 }
 .loginsignup-cont .flex-container .login-signup{
-    width: 10%;
+    /* width: 10%; */
     box-sizing: border-box;
-    margin-left: -25%;
+    /* margin-left: -25%; */
 }
 .loginsignup-cont .flex-container .login-signup .login .login-btn{
-    width: 250%;
-    padding: 12%;
+    /* width: 250%; */
+    /* padding: 12%; */
     font-size: 1.4rem;
     font-weight: 600;
     border-radius:0.7rem;
     border: none;
-    margin-top: 20%;
+    /* margin-top: 20%; */
     background:linear-gradient(180deg, #CFDBEA 0%, #E0E5EE 100%);
    
 }
 .loginsignup-cont .flex-container .login-signup .signup .signup-btn{
-    width: 250%;
-    padding: 12%;
+    /* width: 250%; */
+    /* padding: 12%; */
     font-size: 1.4rem;
     font-weight: 600;
     border-radius:0.7rem;
     border: none;
-    margin-top: 30%;
+    /* margin-top: 30%; */
     /* background:linear-gradient(180deg, #CFDBEA 0%, #E0E5EE 100%); */
     background: #414444F2;
     color: #FDFDFD;
 
    
 }
-@media screen and (max-width:768px){
+/* @media screen and (max-width:768px){
     .loginsignup-cont{
         height: 100vh !important;
         overflow: hidden;
@@ -118,4 +118,4 @@
         padding: 2%;
         margin-top: 1%;
     }
-}
+} */
