@@ -42,12 +42,12 @@ function LoginOtp() {
   return (
     <div className='login-otp-main-cont'>
         <div className='login-otp-center-cont'>
-<<<<<<< HEAD
+
             <h1 className='login-header'>Log In</h1> 
-=======
+
             <div>test</div>
             <h1 className='login-header'>Log In</h1>
->>>>>>> f59f0f2449256181f9ec9d19b90250c7c726257f
+
             <p className='otp-text'>We have send OTP on your
             mobile number</p>
             <OtpInput
