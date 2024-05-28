@@ -6,6 +6,7 @@
     align-items: center;
     justify-content: center;
     height: 100vh;
+    overflow: hidden;
 }
 .login-otp-center-cont{
     background: linear-gradient(172.78deg, #C7D7E8 24.32%, #EAEBF0 100.34%);
@@ -66,32 +67,40 @@
     text-decoration: underline;
 }
 
-@media screen and (max-width:768px){
+@media screen and (max-width:890px){
     .login-otp-main-cont{
         height: 100vh;
-        flex: 0 1 auto;
+        flex-direction: column;
+        width: 100vw;
     }
     .login-otp-center-cont{
         background: none;
         color:#F8F8F8;
+        width: 90%;
+        padding-left: 5%; 
+        height: 60%;
+    }
+    .login-header{
+        font-size: 8vw !important;
     }
 
 
     .login-otp-center-cont input[type='text']{
-        width:3rem !important;
-        height: 3rem;
+        width: 14vw !important;
+        height: 14vw;
+        max-width: 3rem;
+        max-height: 3rem;
         border: none;
         border-radius: 0.4rem;
         box-shadow: 0px 0px 2px 0px rgb(187, 187, 187);
-        font-size: 1.5rem;
+        font-size: 8vw;
+        font-weight: 500;
 
     }
 
-    .otp-numpad{
-        flex:1 1 auto;
-        
+   
 
-    }
+   
     
 
 }
