@@ -1,0 +1,10 @@
+.registration-main-cont{
+    height: 100vh;
+    display: flex;
+    overflow: hidden;
+}
+.registration-main-cont .registration-image{
+    flex: 0.5;
+    background-image: url('../../../Assets/Images/Registration/RegistrationBg.png');
+    background-size: contain;
+}
