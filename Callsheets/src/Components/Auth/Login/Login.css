@@ -9,12 +9,7 @@
 }
 .login-center-cont{
     background: linear-gradient(172.78deg, #C7D7E8 24.32%, #EAEBF0 100.34%);
-<<<<<<< HEAD
-    border-radius: 1rem ;  
-=======
     border-radius: 1rem ;
-   
->>>>>>> 3273198d183feb56d1f1768d1a4f69856130650d
     display: flex;
     flex-direction: column;
     align-items: center;
