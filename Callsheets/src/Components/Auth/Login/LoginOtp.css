@@ -73,7 +73,7 @@
         height: 100vh;
         flex-direction: column;
         width: 100vw;
-        background-size:100% 60%;
+        background-size:100% 70%;
         background-position: top;
        
         
@@ -112,5 +112,13 @@
 
 }
 
+
+@media screen and (min-width:767px) and (max-width:890px){
+    .login-otp-center-cont input[type='text']{
+        font-size: 5vw;
+
+    }
+
+}
 
 
