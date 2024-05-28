@@ -1,11 +1,11 @@
 .loginsignup-cont{
   background-image: url("../../../Assets/Images/CallSheet/Mainpage_BG.png");
-
-  height: auto;
-
-  width: 100vw;
   height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
   box-sizing: border-box;
+  display: flex;
+  justify-content: center;
 
 }
 
@@ -13,9 +13,6 @@
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    padding-bottom: 9%;
-    padding-top: 8%;
-    width: 100%;
     box-sizing: border-box;
  
 }  
@@ -66,6 +63,12 @@
 
    
 }
+
+
+
+
+
+
 @media screen and (max-width:768px){
     .loginsignup-cont{
         height: 100vh !important;
