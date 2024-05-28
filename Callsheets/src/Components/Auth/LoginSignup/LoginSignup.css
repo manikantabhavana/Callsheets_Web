@@ -18,6 +18,7 @@
     padding-top: 8%; */
     /* width: 100%; */
     box-sizing: border-box;
+    padding: 0 5%;
  
 }  
 .loginsignup-cont .flex-container .content{
@@ -25,6 +26,7 @@
     margin-left:-25%; */
     color: #E1E1E1;
     box-sizing: border-box;
+    flex: 0.5;
 } 
 .loginsignup-cont .flex-container .content h2{
     font-size: 4rem;
@@ -41,14 +43,22 @@
     /* width: 10%; */
     box-sizing: border-box;
     /* margin-left: -25%; */
+    flex: 0.5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
 }
 .loginsignup-cont .flex-container .login-signup .login .login-btn{
     /* width: 250%; */
     /* padding: 12%; */
+   
     font-size: 1.4rem;
     font-weight: 600;
     border-radius:0.7rem;
     border: none;
+    padding: 2% 22%;
     /* margin-top: 20%; */
     background:linear-gradient(180deg, #CFDBEA 0%, #E0E5EE 100%);
    
