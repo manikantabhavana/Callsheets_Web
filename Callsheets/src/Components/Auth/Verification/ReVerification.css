@@ -55,3 +55,11 @@
 .reverification-cont .cancel-btn:hover{
     transform: scale(1.1);
 }
+@media screen and (max-width:890px){
+    .reverification-cont .para{
+        width: 90%;
+    }
+    .reverification-cont .cancel-btn{
+        padding: 3% 32%;
+    }
+}

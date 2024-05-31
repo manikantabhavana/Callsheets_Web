@@ -27,20 +27,17 @@ function App() {
 
                 <Route path='/' element={<Loading/>}>
               
-                <Route path='/loginsignup' element={<LoginSignupPage/>}/>
+                <Route path='/login-signup' element={<LoginSignupPage/>}/>
                 <Route path='/login' element={<LoginPage/>}/>
                 <Route path='/login-otp' element={<LoginOtp/>}/>
                 <Route path='/signup' element={<SignupPage/>}/>
                 <Route path='/signup-otp' element={<SignupOtp/>}/>
                 <Route path ='/registration' element={<RegistrationPage/>}/>
 
-
-
                 <Route path='shedules' element={<MainPage/>}>
                   <Route path ='' element={<Shedules/>}/>
                   <Route path ='profile' element={<Profile/>}/>
                 </Route>
-
                 </Route>
                 <Route path='/verification/' element={<VerificationPage/>}>
                   <Route path='face' element={<FaceVerification/>}/>

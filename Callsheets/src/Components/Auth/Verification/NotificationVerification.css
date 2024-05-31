@@ -54,7 +54,11 @@
         
     }
     .notification-verification-cont p{
-        width: 100%;
+        width: 90%;
         
     } 
+    .notification-verification-cont .done-btn{
+        margin-top: -1%;
+        width: 16rem;
+    }
 }
