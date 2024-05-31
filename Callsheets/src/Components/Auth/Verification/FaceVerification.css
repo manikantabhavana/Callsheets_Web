@@ -32,9 +32,13 @@
 @media screen and (max-width:890px){
    
     .face-verification-cont .request-btn{
-        padding: 5% 18%;
-        width: 18rem;
+        padding: 5% 10%;
+        width: 15rem;
+        /* display: flex; */
         text-align: center;
+        /* align-self: center;
+        justify-content: center; */
+        margin-left: 1%;
         
     } 
 }

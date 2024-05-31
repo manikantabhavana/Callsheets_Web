@@ -28,18 +28,32 @@ function App() {
         <Router>
             <Routes>
 
+<<<<<<< HEAD
+                <Route path='/' element={<Loading/>}>
+              
+                <Route path='/login-signup' element={<LoginSignupPage/>}/>
+=======
                 <Route path='' element={<Loading/>}/>
                 <Route path='login-signup' element={<LoginSignupPage/>}/>
+>>>>>>> b8223911bbc1e3f372c90de31a5ab5cc197434d0
                 <Route path='/login' element={<LoginPage/>}/>
                 <Route path='/login-otp' element={<LoginOtp/>}/>
                 <Route path='/signup' element={<SignupPage/>}/>
                 <Route path='/signup-otp' element={<SignupOtp/>}/>
                 <Route path ='/registration' element={<RegistrationPage/>}/>
 
+<<<<<<< HEAD
+                <Route path='shedules' element={<MainPage/>}>
+                  <Route path ='' element={<Shedules/>}/>
+                  <Route path ='profile' element={<Profile/>}/>
+                </Route>
+                </Route>
+=======
 
 
 
 
+>>>>>>> b8223911bbc1e3f372c90de31a5ab5cc197434d0
                 <Route path='/verification/' element={<VerificationPage/>}>
                   <Route path='face' element={<FaceVerification/>}/>
                   <Route path='face/notification' element={<NotificationVerification/>}/>

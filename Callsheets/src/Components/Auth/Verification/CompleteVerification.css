@@ -42,3 +42,11 @@
 .complete-verification-cont .done-btn:hover{
     transform: scale(1.1);
 }
+@media screen and (max-width:890px){
+    .complete-verification-cont .done-btn{
+        padding: 3% 30%;
+    }
+    .complete-verification-cont .para{
+        padding: 0 3%;
+    }
+}
