@@ -9,13 +9,9 @@ function Loading() {
     const navigate=useNavigate()
     setTimeout(()=>{
 
-        navigate('/loginsignup')
+        navigate('/login-signup')
 
     },2000)
-
-
-
-
 
   return (
     <div className='loading-main-cont'>
