@@ -8,8 +8,11 @@ import LoginPage from './Pages/Login/LoginPage'
 import SignupPage from './Pages/Signup/SignupPage';
 import RegistrationPage from './Pages/Registration/RegistrationPage';
 import MainPage from './Pages/MainPage/MainPage';
-import Shedules from "./Components/Schedules/Schedules";
-import Profile from "./Components/Profile/Profile"
+import Schedules from "./Components/Schedules/Schedules";
+import Profile from "./Components/Profile/Profile";
+import Chat from "./Components/Chat/Chat"
+import Invitations from "./Components/Invitations/Invitations"
+import Callsheets from './Components/Callsheets/Callsheets'
 import SignupOtp from './Components/Auth/Signup/SignupOtp';
 import VerificationPage from './Pages/Verification/VerificationPage';
 import FaceVerification from './Components/Auth/Verification/FaceVerification';
@@ -25,26 +28,55 @@ function App() {
         <Router>
             <Routes>
 
+<<<<<<< HEAD
                 <Route path='/' element={<Loading/>}>
               
                 <Route path='/login-signup' element={<LoginSignupPage/>}/>
+=======
+                <Route path='' element={<Loading/>}/>
+                <Route path='login-signup' element={<LoginSignupPage/>}/>
+>>>>>>> b8223911bbc1e3f372c90de31a5ab5cc197434d0
                 <Route path='/login' element={<LoginPage/>}/>
                 <Route path='/login-otp' element={<LoginOtp/>}/>
                 <Route path='/signup' element={<SignupPage/>}/>
                 <Route path='/signup-otp' element={<SignupOtp/>}/>
                 <Route path ='/registration' element={<RegistrationPage/>}/>
 
+<<<<<<< HEAD
                 <Route path='shedules' element={<MainPage/>}>
                   <Route path ='' element={<Shedules/>}/>
                   <Route path ='profile' element={<Profile/>}/>
                 </Route>
                 </Route>
+=======
+
+
+
+
+>>>>>>> b8223911bbc1e3f372c90de31a5ab5cc197434d0
                 <Route path='/verification/' element={<VerificationPage/>}>
                   <Route path='face' element={<FaceVerification/>}/>
                   <Route path='face/notification' element={<NotificationVerification/>}/>
                   <Route path='face/notification/request' element={<ReVerification/>}/>
                   <Route path='face/notification/completed' element={<CompleteVerification/>}/>
                 </Route>
+
+
+
+                <Route path='schedules' element={<MainPage/>}>
+                  <Route path ='' element={<Schedules/>}/>
+                  <Route path ='profile' element={<Profile/>}/>
+                  <Route path ='messages' element={<Chat/>}/>
+                  <Route path ='invitations' element={<Invitations/>}/>
+                  <Route path ='callsheets' element={<Callsheets/>}/>
+                </Route>
+
+
+
+
+
+
+                
             </Routes>
         </Router>
       

@@ -1,0 +1,14 @@
+.schedules-banner-cont{
+    width: 40%;
+    padding: 5%;
+    background-image: url("../../Assets/Images/logo.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center;
+    border-radius:0 0 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-end;
+    align-items: start;
+    color:white;
+}

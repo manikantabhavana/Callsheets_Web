@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import {useNavigate} from 'react-router-dom'
 import './Loading.css';
 import LoadingImg from "../../Assets/Images/LoadingImg.png";
@@ -7,11 +7,14 @@ import LoadingTitle from "../../Assets/Images/LoadingTitle.png";
 
 function Loading() {
     const navigate=useNavigate()
-    setTimeout(()=>{
+    useEffect(()=>{
+      setTimeout(()=>{
 
         navigate('/login-signup')
 
     },2000)
+    },[])
+   
 
   return (
     <div className='loading-main-cont'>
