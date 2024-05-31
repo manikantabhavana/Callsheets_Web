@@ -1,0 +1,76 @@
+.schedules-calender{
+    width: 99%;
+    background-color: white;
+    border-radius: 1rem;
+    margin-left: 1%;
+    padding: 5% 0% 5% 0%;
+
+    
+}
+
+
+.schedules-calender-cont-side-arrows{
+    display: flex;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 550;
+}
+
+.schedules-calender-cont-side-arrow{
+    font-size: 1.5rem;
+    padding: 1%;
+    border-radius: 50%; 
+    background-color: #CEEBED;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+.schedules-calender-cont-side-arrow:hover{
+    transform:scale(1.2);
+    color:
+}
+
+.schedules-dates-cont{
+    display: flex;
+    width: 90%;
+    margin-top: 2%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+    gap:2%;
+}
+
+.schedules-dates-cont .schedule-date{
+    background-color: #CEEBED;
+    border-radius: 0.7rem;
+    flex:1;
+    text-align: center;
+    padding: 3% 0;
+    line-height: 0.5;
+    letter-spacing: 1.5px;
+    box-shadow: 0px 0px 3px 0px #CEEBED;
+    cursor: pointer;
+    color:gray;
+    transition: transform 0.5s ease-in-out;
+    
+ 
+    
+}
+
+.schedules-dates-cont .schedule-date:hover,.schedules-dates-cont .schedule-date.active{
+    background-color:#50CED7;
+    color:white
+}
+
+
+
+.schedules-dates-cont .schedule-date div{
+    background-color: #49C01F;
+    border-radius: 50%;
+    width: 0.6rem;
+    height: 0.6rem;
+    margin: auto;
+  
+}

@@ -1,14 +1,80 @@
+.schedules-main-cont{
+    display: flex;
+    width: 100%;
+    height: 94vh;
+   
+}
+
+.schedules-main-left-cont{
+    width: 50%;
+   
+}
+
+.schedules-cont{
+    width: 50%;
+}
+
 .schedules-banner-cont{
-    width: 40%;
-    padding: 5%;
-    background-image: url("../../Assets/Images/logo.jpg");
+    padding:15% 5% 5% 5%;
+    width: 88%;
+    margin-left: 1%;
+    background:linear-gradient(#15151570,#15151570), url("../../Assets/Images/logo.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position:center;
-    border-radius:0 0 1rem 1rem;
+    border-radius:0 0 2rem 2rem;
+    box-shadow: 0px 0px 4px 0px gray;
     display: flex;
     flex-direction: column;
-    justify-content:flex-end;
-    align-items: start;
     color:white;
 }
+
+.schedules-banner-cont h2,.schedules-banner-cont p{
+    
+    justify-self:flex-end;
+    line-height: 1;
+    margin-bottom: 0;
+}
+
+.schedules-banner-cont p{
+    font-weight: 550;
+}
+
+
+.schedules-calender-main-cont{
+    width: 100%;
+    
+}
+.schedules-calender-header{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    align-items: center;
+   
+    margin-left: 5%;
+}
+
+.schedules-calender-main-cont-date{
+    font-size: 1.5rem;
+    font-weight: 550;
+}
+
+
+.schedules-calender-main-cont-arrows{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color:#949494;
+    font-size: 1.5rem;
+    line-height: 0;
+    
+    
+}
+
+.schedules-calender-main-cont-arrow:hover{
+    color:#50CED7;
+    cursor: pointer;
+
+}
+

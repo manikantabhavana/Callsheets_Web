@@ -1,0 +1,40 @@
+.schedule-list-main-cont{
+    background-color:white;
+    width: 95%;
+    padding:2%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 95%;
+   
+    overflow-x: hidden;
+    overflow-y: scroll;
+    border-radius: 0.5rem;
+
+    
+}
+
+.schedule{
+    display: flex;
+    margin-top: 2%;
+   
+}
+
+
+.schedule-time{
+    width: 15%;
+    font-size: 1.2rem;
+    font-weight: 550;
+
+}
+
+.schedule-title{
+    margin-top: 2%;
+    width: 80%;
+    border-top: 2px solid black;
+}
+
+.schedule-title p{
+    background-color: #7C99C5A3;
+    border-radius: 0.5rem;
+    padding: 5%;
+}
