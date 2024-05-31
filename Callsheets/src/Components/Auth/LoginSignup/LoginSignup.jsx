@@ -26,7 +26,7 @@ function LoginSignup() {
             <div className='login-signup'>
               
                     <button className='login-btn' onClick={()=>{navigate('/login')}}>Login</button>
-                    <button className='signup-btn'>SignUp</button>
+                    <button className='signup-btn' onClick={()=>{navigate('/signup')}}>SignUp</button>
             </div>
 
         </div>
