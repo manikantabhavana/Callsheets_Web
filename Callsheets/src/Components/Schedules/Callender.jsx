@@ -13,7 +13,9 @@ function Callender() {
   useEffect(() => {
     const checkIsMobile = () => {
       setIsMobileDevice(window.innerWidth <= 890);
-      setDates(dates.slice(0,5))
+      if (window.innerWidth<=890){
+        setDates(dates.slice(0,5))
+      }
     };
     checkIsMobile();
     window.addEventListener('resize', checkIsMobile);
