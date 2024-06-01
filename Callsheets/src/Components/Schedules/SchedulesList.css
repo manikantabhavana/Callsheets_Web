@@ -42,20 +42,31 @@
 .add-schedule-cont{
     background: #D7F1FE8C;
     box-shadow: 0px 2px 13px 0px #0000002E;
-    border-radius: 2rem;
-    padding: 5%;
-    width: 25%;
+    border-radius: 1rem;
+    padding:2% 5%;
+    width: 40%;
+    margin-top: 10%;
+    cursor: pointer;
+   
+    
+}
+
+.add-schedule-cont:hover{
+    background-color:#67c8f98c ;
 }
 
 .add-schedule-title{
     display: flex;
     justify-content: space-between;
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: 550;
+    margin: 0;
+    line-height: 0;
    
 }
 
 .add-schedule-text{
+    margin: 0;
     font-size: 0.8rem;
     color:gray
 }
