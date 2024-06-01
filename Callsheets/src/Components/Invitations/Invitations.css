@@ -7,6 +7,7 @@
 }
 .invitations-main-cont .invt-image{
     align-self: center;
+    display: none;
 }
 .invitations-main-cont .invt-items{
     display: flex;
@@ -15,8 +16,8 @@
     justify-content: space-between;
     box-shadow: 0px 0px 2px 0px #00000040;
     /* margin: 0 9.2rem; */
-    padding: 0 2% 0 1%;
-    width: 59.3rem;
+    padding:0% 2%;
+    width: 66%;
  
 
 }
@@ -35,9 +36,9 @@
     border: none;
 }
 .invitations-main-cont .out-cont {
-    width: 62rem;
+    width: 70%;
+    height: 75vh;
     align-self: center;
-    height: 39vh;
     overflow-y: scroll;
 }
 .received-main-cont{
