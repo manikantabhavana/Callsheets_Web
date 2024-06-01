@@ -39,7 +39,7 @@ function App() {
                 <Route path='/signup-otp' element={<SignupOtp/>}/>
                 <Route path ='/registration' element={<RegistrationPage/>}/>
 
-                <Route path='shedules' element={<MainPage/>}>
+                <Route path='schedules' element={<MainPage/>}>
                   <Route path ='' element={<Schedules/>}/>
                   <Route path ='profile' element={<Profile/>}/>
                 </Route>

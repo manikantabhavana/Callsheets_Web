@@ -38,3 +38,24 @@
     border-radius: 0.5rem;
     padding: 5%;
 }
+
+.add-schedule-cont{
+    background: #D7F1FE8C;
+    box-shadow: 0px 2px 13px 0px #0000002E;
+    border-radius: 2rem;
+    padding: 5%;
+    width: 25%;
+}
+
+.add-schedule-title{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1rem;
+    font-weight: 550;
+   
+}
+
+.add-schedule-text{
+    font-size: 0.8rem;
+    color:gray
+}

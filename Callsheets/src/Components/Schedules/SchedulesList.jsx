@@ -24,6 +24,17 @@ function SchedulesList() {
               ))
             }
         </div>
+
+        <div className='add-schedule-cont'>
+          <div className='add-schedule-title'>
+            <p>Add Shedule</p>
+            <p>+</p> 
+
+          </div>
+          <p className='add-schedule-text'>For solo artists and producers
+            perfect for your project.</p>
+
+        </div>
     </div>
   )
 }
