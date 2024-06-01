@@ -137,4 +137,102 @@
 
 
 
+@media screen and (max-width:890px){
+    .header-bar-main-container{
+        background:linear-gradient(#15151570,#15151570), url("../../../Assets/Images/logo.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: fixed;
+        width:auto;
+        top:0;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        padding: 5%;
+        border-radius:0 0 7% 7%;
+
+    }
+
+    .search-bar-cont{
+        width: 82%;
+        margin-left: 0;
+        border-radius: 0.5rem;
+        order:3;
+        padding:1.5% 2%;
+        margin-top: 25%;
+
+    }
+    .search-bar-cont input[type='search']{
+        font-size: 5vw;
+        
+    }
+    .search-bar-cont input[type='search']::placeholder{
+        font-size: 3vw;
+        
+    }
+    .header-date-icon-cont{
+        order: 4;
+        border-radius: 25%;
+        width: 9vw;
+        height: 9vw;
+        margin-top: 25%;
+        
+       
+    }
+
+    .bell-icon-at-bar{
+        font-size: 6vw;
+        background-color: white;
+        border-radius: 50%;
+        padding: 2%;
+        margin-right: 3%;
+
+    }
+
+    .user-main-cont-at-bar{
+        margin-left: 0;
+        width: max-content;
+        height: auto;
+        box-shadow: 0px 0px 10px 0px rgb(255, 255, 255);
+        border-radius: 50%;
+    }
+    .user-img-at-bar{
+        width: 14vw !important;
+        height: 14vw;
+       
+    }
+    .user-details-cont{
+        display: none;
+       
+    }
+    .user-img-at-bar{
+        box-shadow: 0px 0px 5px 0px white;
+    }
+    
+    
+        
+    
+
+
+    
+
+
+    
+}
+
+@media screen and (min-width:767px) and (max-width:890px){
+
+    .search-icon-at-bar{
+        font-size: 6vw;
+    }
+    .date-icon-at-bar{
+        width: 6vw !important;
+        height: 6vw;
+    }
+    
+}
+
+
 

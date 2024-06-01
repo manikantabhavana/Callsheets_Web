@@ -17,7 +17,7 @@ function HeaderBar() {
         <div className='header-date-icon-cont'>
         
 
-            <span className='date-icon-at-bar'  ></span>
+            <span className='date-icon-at-bar'   ></span>
             
 
         </div>

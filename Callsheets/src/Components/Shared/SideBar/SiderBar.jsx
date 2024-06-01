@@ -25,11 +25,11 @@ function SiderBar() {
 
       </div>
       <div className='menu-items-cont'>
-          <Icon icon="fluent:home-16-filled"  className={`menu-item ${isActiveBtn === '' ? 'active' : ''}`} onClick={ ()=>{moveTo('')} }/>
-          <Icon icon="material-symbols:library-books" className={`menu-item ${isActiveBtn === 'invitations' ? 'active' : ''}`} onClick={ ()=>{moveTo('invitations')}} />
-          <img src={Logo} className={`cs-logo-img-at-menu ${isActiveBtn === 'callsheets' ? 'active' : ''}`}  alt='callsheets-logo' onClick={ ()=>{moveTo('callsheets')}}/>
-          <Icon icon="material-symbols-light:sms-rounded" className={`menu-item ${isActiveBtn === 'messages' ? 'active' : ''}`}  onClick={ ()=>{moveTo('messages')}} />
-          <img src={ProfilePhoto} className={`user-img-at-menu ${isActiveBtn === 'profile' ? 'active' : ''}`} alt='user-profile' onClick={ ()=>{moveTo('profile')}}/>
+          <span><Icon icon="fluent:home-16-filled"  className={`menu-item ${isActiveBtn === '' ? 'active' : ''}`} onClick={ ()=>{moveTo('')} }/><p className={isActiveBtn === '' ? 'active-text' : ''}>Home</p></span>
+          <span><Icon icon="material-symbols:library-books" className={`menu-item ${isActiveBtn === 'invitations' ? 'active' : ''}`} onClick={ ()=>{moveTo('invitations')}} /><p className={isActiveBtn === 'invitations' ? 'active-text' : ''}>Invitations</p></span>
+          <span><img src={Logo} className={`cs-logo-img-at-menu ${isActiveBtn === 'callsheets' ? 'active' : ''}`}  alt='callsheets-logo' onClick={ ()=>{moveTo('callsheets')}}/><p className={isActiveBtn === 'callsheets' ? 'active-text' : ''} >Callsheets</p></span>
+          <span><Icon icon="material-symbols-light:sms-rounded" className={`menu-item ${isActiveBtn === 'messages' ? 'active' : ''}`}  onClick={ ()=>{moveTo('messages')}} /><p className={isActiveBtn === 'messages' ? 'active-text' : ''}>Chat</p></span>
+          <span><img src={ProfilePhoto} className={`user-img-at-menu ${isActiveBtn === 'profile' ? 'active' : ''}`} alt='user-profile' onClick={ ()=>{moveTo('profile')}}/><p className={isActiveBtn === 'profile' ? 'active-text' : ''}>Profile</p></span>
 
 
         

@@ -78,3 +78,29 @@
 
 }
 
+
+@media screen and (max-width:890px){
+
+    .schedules-main-cont{
+        flex-direction: column;
+        width: auto;
+        overflow: hidden;
+       
+    }
+    .schedules-main-left-cont{
+        margin-top: 5%;
+        width: 100%;
+    }
+    .schedules-banner-cont{
+        background: none;
+        padding:5%;
+        font-size: 4vw;
+        z-index: 10;
+        position: relative;
+        box-shadow: none;
+    }
+    .schedules-cont{
+        width: 100%;
+    }
+    
+}

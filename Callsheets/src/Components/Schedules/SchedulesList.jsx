@@ -27,7 +27,7 @@ function SchedulesList() {
 
         <div className='add-schedule-cont'>
           <div className='add-schedule-title'>
-            <p>Add Shedule</p>
+            <p>Add Schedule</p>
             <p>+</p> 
 
           </div>

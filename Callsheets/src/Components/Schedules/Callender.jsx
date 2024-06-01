@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState,useEffect } from 'react';
 import "./Callender.css"
 import {Icon} from "@iconify/react"
 
@@ -6,7 +6,21 @@ function Callender() {
     const [dates,setDates]=useState([{day:'Sun',date:'25'},{day:'Mon',date:'26'},{day:'Tue',date:'27'},{day:'Wed',date:'28'}
       ,{day:'Thu',date:'29'},{day:'Fri',date:'30'},{day:'Sat',date:'31'}
     ]);
-    const [selectedDate,setSelectedDate]=useState(29)
+    const [selectedDate,setSelectedDate]=useState(29);
+    const [isMobileDevice, setIsMobileDevice] = useState(false); 
+
+  
+  useEffect(() => {
+    const checkIsMobile = () => {
+      setIsMobileDevice(window.innerWidth <= 890);
+      setDates(dates.slice(0,5))
+    };
+    checkIsMobile();
+    window.addEventListener('resize', checkIsMobile);
+
+    return () => window.removeEventListener('resize', checkIsMobile);
+  }, []);
+
     const toDate=(date)=>{
       setSelectedDate(date)
 
