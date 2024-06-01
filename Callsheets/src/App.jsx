@@ -28,10 +28,9 @@ function App() {
         <Router>
             <Routes>
 
-                <Route path='/' element={<Loading/>}>
-                <Route path='/' element={<Loading/>}/>
-              
-                <Route path='/login-signup' element={<LoginSignupPage/>}/>
+                {/* <Route path='/' element={<Loading/>}/>
+                <Route path='/' element={<Loading/>}/>              
+                <Route path='/login-signup' element={<LoginSignupPage/>}/> */}
                 <Route path='' element={<Loading/>}/>
                 <Route path='login-signup' element={<LoginSignupPage/>}/>
                 <Route path='/login' element={<LoginPage/>}/>
@@ -39,18 +38,13 @@ function App() {
                 <Route path='/signup' element={<SignupPage/>}/>
                 <Route path='/signup-otp' element={<SignupOtp/>}/>
                 <Route path ='/registration' element={<RegistrationPage/>}/>
-
              
-                </Route>
-                <Route path='schedules' element={<MainPage/>}>
+                
+                {/* <Route path='schedules' element={<MainPage/>}>
                   <Route path ='' element={<Schedules/>}/>
                   <Route path ='profile' element={<Profile/>}/>
-                </Route>
+                </Route> */}
                 
-
-
-
-
                 <Route path='/verification/' element={<VerificationPage/>}>
                   <Route path='face' element={<FaceVerification/>}/>
                   <Route path='face/notification' element={<NotificationVerification/>}/>
@@ -65,6 +59,7 @@ function App() {
                   <Route path ='profile' element={<Profile/>}/>
                   <Route path ='messages' element={<Chat/>}/>
                   <Route path ='invitations' element={<Invitations/>}/>
+                  
                   <Route path ='callsheets' element={<Callsheets/>}/>
                 </Route>
 

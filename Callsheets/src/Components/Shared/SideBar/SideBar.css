@@ -48,7 +48,7 @@
 .side-bar-logout{
     display:flex;
     align-self: center;
-    margin-top: auto;
+    margin-top: auto; 
     margin-bottom: 25%;
 }
 
