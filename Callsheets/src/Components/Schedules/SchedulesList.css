@@ -77,11 +77,8 @@
         height: max-content !important;
         overflow-y: scroll;
         background: none;
-        height:30% !important;
         padding-bottom: 20%;
-       
-       
-      
+        
     }
     .add-schedule-cont{
         width:40%;

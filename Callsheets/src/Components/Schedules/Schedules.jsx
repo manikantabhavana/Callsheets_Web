@@ -27,10 +27,16 @@ function Schedules() {
 
               <div className='schedules-calender-header'>
 
-                <p className='schedules-calender-main-cont-date'>Date</p>
-                <div className='schedules-calender-main-cont-arrows'>
-                  <Icon icon="fe:arrow-up" className='schedules-calender-main-cont-arrow' />
-                  <Icon icon="fe:arrow-down" className='schedules-calender-main-cont-arrow' />
+                <p className='schedules-calender-cont-date'>Date</p>
+                <div className='schedules-calender-filter-cont'>
+                
+                  <Icon icon="ep:menu"  className='schedules-calender-filter-icon' />
+                  
+                  <div className='schedules-calender-filter-options'>
+                      <p className='schedules-calender-filter-option'>Today</p>
+                      <p  className='schedules-calender-filter-option'>This Week</p>
+                      <p  className='schedules-calender-filter-option'>This Month</p>
+                  </div>
                 </div>
 
               </div>

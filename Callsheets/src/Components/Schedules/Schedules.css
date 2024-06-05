@@ -50,33 +50,69 @@
     justify-content: space-between;
     width: 90%;
     align-items: center;
-   
     margin-left: 5%;
 }
 
-.schedules-calender-main-cont-date{
+.schedules-calender-cont-date{
     font-size: 1.5rem;
     font-weight: 550;
+   
+}
+
+.schedules-calender-filter-cont{
+    display: inline-block;
+    position: relative;
+    width: 50%;
+    text-align: end;
+    
+
 }
 
 
-.schedules-calender-main-cont-arrows{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color:#949494;
-    font-size: 1.5rem;
+
+
+.schedules-calender-filter-options{
+    display: none;
+    position: absolute;
+   
+    color:black;
+    background-color: white;
+    box-shadow: 0px 0px 5px 0px gray;
+    font-size: 0.8rem;
+    font-weight: 550;
     line-height: 0;
-    
-    
+    width:40%;
+    text-align: center;
+    right: 0%;
+    border-radius: 0.2rem;
+
 }
 
-.schedules-calender-main-cont-arrow:hover{
+.schedules-calender-filter-option{
+    
+    width: 100%;
+    padding: 15% 0;
+    cursor: pointer;
+    margin: 0 !important;
+   
+}
+.schedules-calender-filter-option:hover{
+    color:#50CED7;
+    background-color: #50ced73f;
+   
+    width: 100%;
+}
+.schedules-calender-filter-cont:hover .schedules-calender-filter-options{
+    display: block;
+}
+
+.schedules-calender-filter-icon:hover{
     color:#50CED7;
     cursor: pointer;
 
 }
+
+
 
 
 @media screen and (max-width:890px){
@@ -99,8 +135,19 @@
         position: relative;
         box-shadow: none;
     }
+    .schedules-calender-header{
+        margin-top: 15%;
+        line-height: 0;
+    }
+
+    .schedules-calender-filter-icon{
+        font-size: 6vw;
+    }
+  
     .schedules-cont{
         width: 100%;
+        flex:auto;
+        overflow-y: scroll;
     }
     
 }
