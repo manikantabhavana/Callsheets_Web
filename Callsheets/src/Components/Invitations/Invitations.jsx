@@ -24,8 +24,8 @@ function Invitations() {
       break;
       case 2: setBtnContent("Requested");
       break;
-      case 3: setBtnContent("Accepted");
-      break;
+      // case 3: setBtnContent("Accepted");
+      // break;
       default:
         setBtnContent("Accept")
     }
@@ -35,9 +35,9 @@ function Invitations() {
         <div className='invitations-main-cont'>
           <div className='invt-image'> <img src={callsheet} alt="callsheets" /></div>
           <div className='invt-items'> 
-            <p className={`${isActiveBtn === 1 ? "active":""}`} onClick={()=>{handlebtn(1)}}>Received</p>
+            <p className={`${isActiveBtn === null ? "active":""}`} onClick={()=>{handlebtn(null)}}>Received</p>
             <p className={`${isActiveBtn === 2 ? "active":""}`} onClick={()=>{handlebtn(2)}}>Requested</p>
-            <p className={`${isActiveBtn === 3 ? "active":""}`} onClick={()=>{handlebtn(3)}}>Accepted</p>
+            {/* <p className={`${isActiveBtn === 3 ? "active":""}`} onClick={()=>{handlebtn(3)}}>Accepted</p> */}
           </div>
            <div className='out-cont'>
            {invt.map((i)=>{

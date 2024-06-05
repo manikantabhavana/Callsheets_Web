@@ -13,7 +13,7 @@
     display: flex;
     /* text-align: center; */
     align-self: center;
-    justify-content: space-between;
+    justify-content: space-around;
     box-shadow: 0px 0px 2px 0px #00000040;
     /* margin: 0 9.2rem; */
     padding:0% 2%;
@@ -71,7 +71,7 @@
 }
 .received-main-cont .btns .acpt{
     /* width: 9rem; */
-    padding: 3% 13%;
+    padding: 3% 10%;
     margin: 8% 3% 0 0%;
     background-color: #46C7D1;
     color: white;
@@ -89,4 +89,62 @@
     font-size: 1rem;
     font-weight: 600;
     cursor: pointer;
+}
+@media screen and (max-width:890px){
+    .header-bar-main-container{
+        background: linear-gradient(#15151570, #15151570), url("../../Assets/Images/Invitations/InvtMblBg.png");
+        /* background:none; */
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        flex-wrap: nowrap;
+        padding: 3% 17%;
+        width:  66%;
+    }
+    .user-main-cont-at-bar{
+        display: none;
+    }
+    .bell-icon-at-bar{
+        display: none;
+    }
+    .search-bar-cont{
+        width: 100%;
+        padding: 3%;
+        font-size: 1.5rem;
+    }
+    .search-bar-cont input[type='search']{
+        font-size: 1.2rem;
+    }
+    .search-bar-cont .search-icon-at-bar{
+        font-size: 1.5rem;
+    }
+    .header-date-icon-cont{
+        display: none;
+    }
+    .received-main-cont{
+        flex-direction: column;
+    }
+    .outlet-container{
+        margin-top: 29%;
+    }
+    .invitations-main-cont .invt-items{
+        width:  100%;
+    }
+    .received-main-cont .container img{
+       width: 5rem;
+       height: 5rem;
+    }
+    .invitations-main-cont .out-cont{
+        width:  100%;
+    }
+    .received-main-cont .btns{
+        display: flex;
+        padding-bottom: 3%;
+        align-self: flex-end;
+    }
+    .received-main-cont .container .content{
+        margin: 0 0 0 0;
+    }
+   
+
 }
