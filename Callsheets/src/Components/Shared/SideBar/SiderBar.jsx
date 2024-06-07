@@ -29,9 +29,8 @@ function SiderBar() {
           <span className={isActiveBtn === 'invitations' ? 'active-span' : ''}><Icon icon="material-symbols:library-books" className={`menu-item ${isActiveBtn === 'invitations' ? 'active' : ''}`} onClick={ ()=>{moveTo('invitations')}} /><p className={isActiveBtn === 'invitations' ? 'active-text' : ''}>Invitations</p></span>
           <span className={isActiveBtn === 'search' ? 'active-span' : ''}> <Icon icon="ri:search-line" className={`menu-item ${isActiveBtn === 'search' ? 'active' : ''}`} onClick={ ()=>{moveTo('search')}} /><p className={isActiveBtn === 'search' ? 'active-text' : ''} >Search</p></span>
           <span className={isActiveBtn === 'chat' ? 'active-span' : ''}><Icon icon="material-symbols-light:sms-rounded" className={`menu-item ${isActiveBtn === 'chat' ? 'active' : ''}`}  onClick={ ()=>{moveTo('chat')}} /><p className={isActiveBtn === 'chat' ? 'active-text' : ''}>Chat</p></span>
-          <span className={isActiveBtn === 'personal' ? 'active-span' : ''}><Icon icon="solar:user-bold" style={{color:'red'}} className={`menu-item ${isActiveBtn === 'personal' ? 'active' : ''}`} onClick={ ()=>{moveTo('personal')}} /><p className={isActiveBtn === 'personal' ? 'active-text' : ''}>Personal</p></span>
-          <Icon icon="mdi:user-outline"  style={{color: 'black'}} />
-
+          <span className={isActiveBtn === 'personal' ? 'active-span' : ''}><Icon icon="mdi:user" className={`menu-item ${isActiveBtn === 'personal' ? 'active' : ''}`} onClick={ ()=>{moveTo('personal')}} /><p className={isActiveBtn === 'personal' ? 'active-text' : ''}>Personal</p></span>
+         
         
 
       </div>
