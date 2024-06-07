@@ -25,12 +25,12 @@ function SiderBar() {
 
       </div>
       <div className='menu-items-cont'>
-          <span><Icon icon="fluent:home-16-filled"  className={`menu-item ${isActiveBtn === '' ? 'active' : ''}`} onClick={ ()=>{moveTo('')} }/><p className={isActiveBtn === '' ? 'active-text' : ''}>Home</p></span>
-          <span><Icon icon="material-symbols:library-books" className={`menu-item ${isActiveBtn === 'invitations' ? 'active' : ''}`} onClick={ ()=>{moveTo('invitations')}} /><p className={isActiveBtn === 'invitations' ? 'active-text' : ''}>Invitations</p></span>
-          <span><img src={Logo} className={`cs-logo-img-at-menu ${isActiveBtn === 'callsheets' ? 'active' : ''}`}  alt='callsheets-logo' onClick={ ()=>{moveTo('callsheets')}}/><p className={isActiveBtn === 'callsheets' ? 'active-text' : ''} >Callsheets</p></span>
-          <span><Icon icon="material-symbols-light:sms-rounded" className={`menu-item ${isActiveBtn === 'messages' ? 'active' : ''}`}  onClick={ ()=>{moveTo('messages')}} /><p className={isActiveBtn === 'messages' ? 'active-text' : ''}>Chat</p></span>
-          <span><img src={ProfilePhoto} className={`user-img-at-menu ${isActiveBtn === 'profile' ? 'active' : ''}`} alt='user-profile' onClick={ ()=>{moveTo('profile')}}/><p className={isActiveBtn === 'profile' ? 'active-text' : ''}>Profile</p></span>
-
+          <span className={isActiveBtn === '' ? 'active-span' : ''}><Icon icon="fluent:home-16-filled"  className={`menu-item ${isActiveBtn === '' ? 'active' : ''}`} onClick={ ()=>{moveTo('')} }/><p className={isActiveBtn === '' ? 'active-text' : ''}>Home</p></span>
+          <span className={isActiveBtn === 'invitations' ? 'active-span' : ''}><Icon icon="material-symbols:library-books" className={`menu-item ${isActiveBtn === 'invitations' ? 'active' : ''}`} onClick={ ()=>{moveTo('invitations')}} /><p className={isActiveBtn === 'invitations' ? 'active-text' : ''}>Invitations</p></span>
+          <span className={isActiveBtn === 'search' ? 'active-span' : ''}> <Icon icon="ri:search-line" className={`menu-item ${isActiveBtn === 'search' ? 'active' : ''}`} onClick={ ()=>{moveTo('search')}} /><p className={isActiveBtn === 'search' ? 'active-text' : ''} >Search</p></span>
+          <span className={isActiveBtn === 'chat' ? 'active-span' : ''}><Icon icon="material-symbols-light:sms-rounded" className={`menu-item ${isActiveBtn === 'chat' ? 'active' : ''}`}  onClick={ ()=>{moveTo('chat')}} /><p className={isActiveBtn === 'chat' ? 'active-text' : ''}>Chat</p></span>
+          <span className={isActiveBtn === 'personal' ? 'active-span' : ''}><Icon icon="solar:user-bold" style={{color:'red'}} className={`menu-item ${isActiveBtn === 'personal' ? 'active' : ''}`} onClick={ ()=>{moveTo('personal')}} /><p className={isActiveBtn === 'personal' ? 'active-text' : ''}>Personal</p></span>
+          <Icon icon="mdi:user-outline"  style={{color: 'black'}} />
 
         
 

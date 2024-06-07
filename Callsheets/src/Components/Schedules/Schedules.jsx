@@ -8,6 +8,7 @@ import Logo from "../../Assets/Images/logo.jpg";
 function Schedules() {
   const [username,setUsername]=useState('Pawan Kalyan');
   const [dates,setDates]=useState([]);
+  const [filter,setFilter]=useState('Today');
   
 
 
@@ -29,6 +30,7 @@ function Schedules() {
 
                 <p className='schedules-calender-cont-date'>Date</p>
                 <div className='schedules-calender-filter-cont'>
+                  {filter}
                 
                   <Icon icon="ep:menu"  className='schedules-calender-filter-icon' />
                   

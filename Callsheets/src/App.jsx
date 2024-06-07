@@ -56,11 +56,11 @@ function App() {
 
                 <Route path='schedules' element={<MainPage/>}>
                   <Route path ='' element={<Schedules/>}/>
-                  <Route path ='profile' element={<Profile/>}/>
-                  <Route path ='messages' element={<Chat/>}/>
+                  <Route path ='personal' element={<Profile/>}/>
+                  <Route path ='chat' element={<Chat/>}/>
                   <Route path ='invitations' element={<Invitations/>}/>
                   
-                  <Route path ='callsheets' element={<Callsheets/>}/>
+                  <Route path ='search' element={<Callsheets/>}/>
                 </Route>
 
 
