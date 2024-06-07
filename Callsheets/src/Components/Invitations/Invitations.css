@@ -5,10 +5,6 @@
     align-self: center  ;
 
 }
-.invitations-main-cont .invt-image{
-    align-self: center;
-    display: none;
-}
 .invitations-main-cont .invt-items{
     display: flex;
     /* text-align: center; */
@@ -91,60 +87,42 @@
     cursor: pointer;
 }
 @media screen and (max-width:890px){
-    .header-bar-main-container{
-        background: linear-gradient(#15151570, #15151570), url("../../Assets/Images/Invitations/InvtMblBg.png");
-        /* background:none; */
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        flex-wrap: nowrap;
-        padding: 3% 17%;
-        width:  66%;
+    .outlet-container{
+        /* margin-top: 35%; */
     }
-    .user-main-cont-at-bar{
-        display: none;
+    .invitations-main-cont{
+      margin-top: 78%;
+     
     }
-    .bell-icon-at-bar{
-        display: none;
-    }
-    .search-bar-cont{
+    .invitations-main-cont .invt-items{
         width: 100%;
-        padding: 3%;
-        font-size: 1.5rem;
     }
-    .search-bar-cont input[type='search']{
-        font-size: 1.2rem;
-    }
-    .search-bar-cont .search-icon-at-bar{
-        font-size: 1.5rem;
-    }
-    .header-date-icon-cont{
-        display: none;
+    .invitations-main-cont .out-cont {
+        width: 100%;
+        height: 70vh;
+        overflow-y: scroll;
     }
     .received-main-cont{
         flex-direction: column;
     }
-    .outlet-container{
-        margin-top: 29%;
-    }
-    .invitations-main-cont .invt-items{
-        width:  100%;
+    .received-main-cont .container{
+  
+    justify-content: space-around;
+
+
     }
     .received-main-cont .container img{
-       width: 5rem;
-       height: 5rem;
-    }
-    .invitations-main-cont .out-cont{
-        width:  100%;
+        width: 5rem;
+        height: 5rem;
+
     }
     .received-main-cont .btns{
         display: flex;
         padding-bottom: 3%;
-        align-self: flex-end;
+        /* justify-content: flex-end; */
+        /* align-items: flex-end; */
+        /* align-self: flex-end; */
     }
-    .received-main-cont .container .content{
-        margin: 0 0 0 0;
-    }
-   
+ 
 
 }

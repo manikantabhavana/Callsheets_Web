@@ -11,6 +11,8 @@ function Invitations() {
   {img:image,name:"Taeungh",role:"Model,Actor",time:"Monday-01.00-03.50",btn1:"Accept",btn2:"Cancel"},
   {img:image,name:"Taeungh",role:"Model,Actor",time:"Monday-01.00-03.50",btn1:"Accept",btn2:"Cancel"},
   {img:image,name:"Taeungh",role:"Model,Actor",time:"Monday-01.00-03.50",btn1:"Accept",btn2:"Cancel"},
+  {img:image,name:"vvv",role:"Model,Actor",time:"Monday-01.00-03.50",btn1:"Accept",btn2:"Cancel"},
+  {img:image,name:"Taeungh",role:"Model,Actor",time:"Monday-01.00-03.50",btn1:"Accept",btn2:"Cancel"}
   
 
   ]
@@ -33,7 +35,7 @@ function Invitations() {
   return (
    <>
         <div className='invitations-main-cont'>
-          <div className='invt-image'> <img src={callsheet} alt="callsheets" /></div>
+          {/* <div className='invt-image'> <img src={callsheet} alt="callsheets" /></div> */}
           <div className='invt-items'> 
             <p className={`${isActiveBtn === null ? "active":""}`} onClick={()=>{handlebtn(null)}}>Received</p>
             <p className={`${isActiveBtn === 2 ? "active":""}`} onClick={()=>{handlebtn(2)}}>Requested</p>
