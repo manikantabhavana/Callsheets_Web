@@ -15,37 +15,65 @@
 .schedule{
     display: flex;
     margin-top: 2%;
+    flex-direction: column;
+    position: relative;
+    z-index: 1;
    
 }
 
 
-.schedule-time{
-    width: 15%;
-    font-size: 1.2rem;
-    font-weight: 550;
+.schedule-time-cont{
+    width: max-content;
+    font-size: 1rem;
+    font-weight: 500;
+    background-color:white;
+    padding: 1%;
+    z-index: 2;
 
+    
+
+}
+
+.schedule-time-cont .schedule-start-time{
+    color :black;
 }
 
 .schedule-title{
-    margin-top: 2%;
-    width: 80%;
-    border-top: 2px solid black;
+    margin-top: -6%;
+    margin-left: 0;
+    padding-top: 5%;
+    border-top: 1px solid black;
+    position: relative;
+    z-index: 1;
+    flex: auto;
+
 }
 
 .schedule-title p{
+    max-width: 96%;
+    width: max-content;
+    text-align: end;
+    margin-left: auto;
     background-color: #7C99C5A3;
     border-radius: 0.5rem;
-    padding: 5%;
+    padding:2%;
+    color: white;
 }
 
 .add-schedule-cont{
-    background: #D7F1FE8C;
+    position: absolute;
+    bottom: 5%;
+    left: 77.5%;
+    transform: translate(-50%,0);
+    background-color:#6bd4dc;
+    color: white;
     box-shadow: 0px 2px 13px 0px #0000002E;
     border-radius: 1rem;
-    padding:2% 5%;
-    width: 30%;
+    padding:0.05% 5%;
+    width: max-content;
     margin-top: 10%;
     cursor: pointer;
+
    
     
 }
@@ -64,11 +92,7 @@
    
 }
 
-.add-schedule-text{
-    margin: 0;
-    font-size: 0.6rem;
-    color:gray
-}
+
 
 
 @media screen and (max-width:890px){
@@ -79,9 +103,43 @@
         background: none;
         padding-bottom: 20%;
         
+        
+        
     }
+    .schedule-time-cont{
+       
+        background-color:aliceblue;
+       
+        
+    
+    }
+    
     .add-schedule-cont{
-        width:40%;
+
+        width:max-content;
+      
+
+    }
+  
+    .add-schedule-cont{
+      z-index: 1;
+        bottom: 12%;
+        left: 50%;
+        transform: translate(-50%,0);
+    }
+
+    
+}
+
+
+@media screen and (min-width:767px) and (max-width:890px){
+
+   .add-schedule-cont{
+    bottom: 15%;
+   }
+    .schedule-title{
+        margin-top: -4%;
+        padding-top: 2%;
     }
 
     

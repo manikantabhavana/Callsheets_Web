@@ -41,6 +41,10 @@
 @media screen and (max-width:890px){
     .mainpage-center-container{
         flex-direction: column-reverse;
+        background: aliceblue;
+    }
+    .header-bar{
+        display: none;
     }
     
 }

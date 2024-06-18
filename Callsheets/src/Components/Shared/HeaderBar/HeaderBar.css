@@ -171,12 +171,14 @@
     }
 
     .search-bar-cont{
-        width: 100%;
+        background-color: white !important;
+        width: 90%;
         margin-left: 0;
-        border-radius: 0.5rem;
+        border-radius: 2rem;
         order:3;
-        padding:1.5% 2%;
-        margin-top: 25%;
+        padding:2% 5%;
+        margin-top: 5%;
+
 
     }
     .search-bar-cont input[type='search']{
@@ -188,7 +190,8 @@
         
     }
     .search-icon-at-bar{
-        font-size: 6vw !important;
+        font-size: 5vw !important;
+       
     }
     .header-date-icon-cont{
         order: 4;
@@ -201,6 +204,7 @@
         top:106%;
         right:31% ;
         background-color: transparent;
+        display: none;
         
         
        
@@ -232,8 +236,8 @@
         border-radius: 50%;
     }
     .user-img-at-bar{
-        width: 14vw !important;
-        height: 14vw;
+        width: 3rem;
+        height: 3rem;
        
     }
     .user-details-cont{
@@ -257,8 +261,24 @@
 
 @media screen and (min-width:767px) and (max-width:890px){
 
+    .header-bar-main-container{
+        padding: 2% 5%;
+    }
+    .user-img-at-bar{
+        width: 4rem !important;
+        height: 4rem;
+    }
+
+    .bell-icon-at-bar{
+        font-size: 2rem;
+    }
+
     .search-icon-at-bar{
         font-size: 6vw;
+    }
+
+    .header-date-icon-cont{
+        top:102%;
     }
     .date-icon-at-bar{
         width: 6vw !important;

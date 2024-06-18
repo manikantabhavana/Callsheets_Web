@@ -2,18 +2,21 @@ import React,{useState} from 'react';
 import "./SchedulesList.css"
 
 function SchedulesList() {
-  const [schedules,setSchedules]=useState([{time:'11:30',title:'shooting for OG Movie at Ramoji Film City'},
-  {time:'4:30',title:'shooting for HHVM Movie at annapurna Film studios'}
+  const [schedules,setSchedules]=useState([{startTime:'Mon,18 jun 24 11:30 PM',endTime:'Mon,18 jun 24 12:30 AM',title:'shooting for OG Movie at Ramoji Film City'},
+  {startTime:'Mon,18 jun 24 11:30 PM',endTime:'Mon,18 jun 24 12:30 AM',title:'shooting for HHVM Movie at annapurna Film studios'}
   ])
   return (
     <div className='schedule-list-main-cont'>
-        <h2>schedules</h2>
+        
         <div className='schedule-list'>
             {
               schedules.map((schedule)=>(
                 
                 <div className='schedule'>
-                  <div className='schedule-time'>{schedule.time}</div>
+                  <div className='schedule-time-cont'>
+                    <div className='schedule-start-time'>{schedule.startTime}</div>
+                    <div className='schedule-end-time'>{schedule.endTime}</div>
+                  </div>
                   <div className='schedule-title'>
                     <p>{schedule.title}</p>
                   </div>
@@ -26,15 +29,12 @@ function SchedulesList() {
         </div>
 
         <div className='add-schedule-cont'>
-          <div className='add-schedule-title'>
-            <p>Add Schedule</p>
-            <p>+</p> 
-
-          </div>
-          <p className='add-schedule-text'>For solo artists and producers
-            perfect for your project.</p>
-
+            <p>Schedule +</p>
         </div>
+           
+
+          
+         
     </div>
   )
 }
