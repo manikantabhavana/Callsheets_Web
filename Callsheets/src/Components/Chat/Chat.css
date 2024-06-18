@@ -1,0 +1,110 @@
+.chat-main-cont{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-header-cont{
+    background-color:#47C7D2;
+    display: flex;
+    align-items: center;
+    padding:3% 0;
+
+}
+
+.search-bar-chat{
+    background-color: white;
+    display: flex;
+    width: 80%;
+    padding:1% 5%;
+    align-items: center;
+   
+    border-radius: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    
+    color:gray;
+}
+
+.search-bar-chat input{
+    border: none;
+    width: 100%;
+    padding: 2.5%;
+    outline: none;
+    font-size: 1.2rem;
+    color:gray;
+}
+
+
+.chat-list-cont{
+
+    display: flex;
+    padding-top: 5%;
+    height: 80%;
+    padding-bottom: 15%;
+    flex-direction: column;
+    overflow-y: scroll;
+    align-items: center;
+    gap:5%;
+}
+
+.chat-item{
+    display: flex;
+    align-items: center;
+    width: 90%;
+    gap:5%;
+    
+    
+}
+.chat-item img{
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid rgb(159, 159, 159);
+    
+}
+
+.chat-item .name-msg-time{
+    display: flex;
+    flex: auto;
+    flex-direction: column;
+    width: 100%;
+   
+}
+
+
+
+.chat-item .name-msg-time .name-time{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.chat-item .name-msg-time .name-time p{
+   
+    line-height: 1;
+    margin-top:0;
+   
+}
+
+.chat-item .msg{
+    line-height: 0;
+    margin: 0;
+    color: gray;
+    font-weight: 550;
+  
+}
+
+.chat-name{
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: 1.25px;
+}
+
+.chat-time{
+    font-size: 0.8rem;
+}

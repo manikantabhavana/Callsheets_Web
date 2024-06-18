@@ -5,8 +5,10 @@ import SchedulesList from './SchedulesList';
 import Callender from './Callender';
 import ProfilePhoto from "../../Assets/Images/SignupBg.png";
 import Logo from "../../Assets/Images/logo.jpg";
+import { useNavigate } from 'react-router-dom';
 
 function Schedules() {
+  const navigate=useNavigate();
   const [username,setUsername]=useState('Pawan Kalyan');
   const [dates,setDates]=useState([]);
   const [filter,setFilter]=useState('Today');
@@ -20,6 +22,10 @@ function Schedules() {
       document.getElementById('date-input').focus();
     }, 0);
   };
+
+  const goToSearch=()=>{
+    navigate('../search')
+  }
   
 
 
@@ -44,6 +50,8 @@ function Schedules() {
               <Icon icon="ri:search-line" className='search-icon-at-bar'/>
               <input type='search'
               placeholder='shedules, artists'
+              readOnly
+              onClick={goToSearch}
               />
 
         </div>

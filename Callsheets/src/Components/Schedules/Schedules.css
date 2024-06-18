@@ -48,9 +48,9 @@
 .schedules-calender-header{
     display: flex;
     justify-content: space-between;
-    width: 90%;
+    width: 95%;
     align-items: center;
-    margin-left: 5%;
+    margin-left: 2.5%;
 }
 
 .schedules-calender-cont-date{

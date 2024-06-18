@@ -12,13 +12,15 @@ import Schedules from "./Components/Schedules/Schedules";
 import Profile from "./Components/Profile/Profile";
 import Chat from "./Components/Chat/Chat"
 import Invitations from "./Components/Invitations/Invitations"
-import Callsheets from './Components/Callsheets/Callsheets'
+import Callsheets from './Components/SearchMenu/SearchMenu'
 import SignupOtp from './Components/Auth/Signup/SignupOtp';
 import VerificationPage from './Pages/Verification/VerificationPage';
 import FaceVerification from './Components/Auth/Verification/FaceVerification';
 import NotificationVerification from './Components/Auth/Verification/NotificationVerification';
 import ReVerification from './Components/Auth/Verification/ReVerification';
 import CompleteVerification from './Components/Auth/Verification/CompleteVerification';
+import Search from './Components/Search/Search'
+import SearchMenu from './Components/SearchMenu/SearchMenu'
 
 function App() {
 
@@ -60,8 +62,9 @@ function App() {
                   <Route path ='chat' element={<Chat/>}/>
                   <Route path ='invitations' element={<Invitations/>}/>
                   
-                  <Route path ='search' element={<Callsheets/>}/>
+                  <Route path ='search' element={<SearchMenu/>}/>
                 </Route>
+                <Route path='search' element={<Search/>}/>
 
 
 
