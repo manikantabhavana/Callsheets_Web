@@ -55,13 +55,6 @@
     width: 100%;
     position: relative;
    
-   
-    
-   
-   
-   
-    
-  
 }
 
 .side-bar-main-cont .menu-items-cont .active-span::before {
@@ -97,8 +90,7 @@
 
 .side-bar-main-cont .menu-items-cont .menu-item,.side-bar-logout .menu-item{
     font-size: 1.8rem;
-    cursor: pointer;
-    
+    cursor: pointer; 
     transition: transform 0.5s ease-in-out ,background 0.5s ease-in-out,border-radius 0.2s ease-in-out,transform 0.8s ease-in-out;
     color:rgb(69, 69, 69);
     padding: 10%;
@@ -118,8 +110,7 @@
 .menu-item.active{
     background-color:#a9f9fff0 !important;
     color:black;
-    border-radius: 50%;
-   
+    border-radius: 50%; 
     transform: translateX(100%) !important;
     position: relative;
        
@@ -180,6 +171,7 @@
         position: fixed;
         bottom: 0;
         border-radius: 1.2rem 1.2rem 0 0;
+      
     }
 
     .sidebar-logo{
@@ -218,15 +210,28 @@
 
     .side-bar-main-cont .menu-items-cont .menu-item{
         padding:15%;
-        font-size:10vw;
+        font-size:8vw;
+        transition: transform 1s ease-in-out;
+    }
+     .menu-item.active{
+        transform: translateY(-50%) !important;
     }
     .cs-logo-img-at-menu,.user-img-at-menu{
         width: 10vw;
         padding:15%;
+    }
+    .side-bar-main-cont .menu-items-cont .active-span::before {
+        transform:translateY(-27%) rotate(0deg) scale(2)  !important;
     }
 
 
 
 
     
+}
+@media screen and  (min-width:767px) and (max-width:890px){
+    .menu-item{
+        font-size: 6vw !important;
+        
+    }
 }

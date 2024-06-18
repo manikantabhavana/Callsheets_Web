@@ -46,6 +46,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
+   
+}
+
+.header-date-icon-cont input[type='date']{
+    background-color: none;
+    display:none;
 }
 
 .date-icon-at-bar{
@@ -62,6 +68,9 @@
         mask-size: 100% 100%;
       
         display: inline-block;
+        z-index: 10;
+        position: relative;
+        z-index: 100;
         
 
    
@@ -72,16 +81,22 @@
     color:rgb(172, 172, 172);
     
 }
+#date-input {
+    display: none;
+   
+}
+
 
 
 
 .bell-icon-at-bar{
     font-size: 1.5rem;
     margin-left: auto;
-    
-   
-    
+  
+  
 }
+
+
 .user-main-cont-at-bar{
 
     display: flex;
@@ -144,7 +159,7 @@
         background-size: cover;
         background-repeat: no-repeat;
         position: fixed;
-        width:auto;
+        width:90%;
         top:0;
         flex-direction: row;
         flex-wrap: wrap;
@@ -156,7 +171,7 @@
     }
 
     .search-bar-cont{
-        width: 82%;
+        width: 100%;
         margin-left: 0;
         border-radius: 0.5rem;
         order:3;
@@ -169,17 +184,34 @@
         
     }
     .search-bar-cont input[type='search']::placeholder{
-        font-size: 3vw;
+        font-size: 4vw;
         
+    }
+    .search-icon-at-bar{
+        font-size: 6vw !important;
     }
     .header-date-icon-cont{
         order: 4;
         border-radius: 25%;
         width: 9vw;
         height: 9vw;
-        margin-top: 25%;
+        position: absolute;
+        display: inline-block;
+        
+        top:106%;
+        right:31% ;
+        background-color: transparent;
+        
         
        
+    }
+  
+    .date-icon-at-bar{
+        width: 7vw !important;
+        height: 7vw !important;
+        
+        
+        
     }
 
     .bell-icon-at-bar{
@@ -188,6 +220,7 @@
         border-radius: 50%;
         padding: 2%;
         margin-right: 3%;
+        
 
     }
 

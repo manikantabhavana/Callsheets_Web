@@ -28,16 +28,16 @@ function Schedules() {
 
               <div className='schedules-calender-header'>
 
-                <p className='schedules-calender-cont-date'>Date</p>
+                <p className='schedules-calender-cont-date'>Schedules</p>
                 <div className='schedules-calender-filter-cont'>
-                  {filter}
+                  <span >{filter}</span>
                 
                   <Icon icon="ep:menu"  className='schedules-calender-filter-icon' />
                   
                   <div className='schedules-calender-filter-options'>
-                      <p className='schedules-calender-filter-option'>Today</p>
-                      <p  className='schedules-calender-filter-option'>This Week</p>
-                      <p  className='schedules-calender-filter-option'>This Month</p>
+                      <p className='schedules-calender-filter-option' onClick={()=>{setFilter('Today')}}>Today</p>
+                      <p  className='schedules-calender-filter-option' onClick={()=>{setFilter('This Week')}}>This Week</p>
+                      <p  className='schedules-calender-filter-option' onClick={()=>{setFilter('This Month')}}>This Month</p>
                   </div>
                 </div>
 

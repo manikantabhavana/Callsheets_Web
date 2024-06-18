@@ -61,13 +61,26 @@
 
 .schedules-calender-filter-cont{
     display: inline-block;
+  
+    
     position: relative;
     width: 50%;
     text-align: end;
+   
     
-
+}
+.schedules-calender-filter-cont span{
     
-
+    margin-right: 5%;
+    display: inline-block;
+    vertical-align: middle !important;
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+.schedules-calender-filter-icon{
+    vertical-align: middle;
+    font-size: 1.5rem;
+    
 }
 
 
@@ -126,7 +139,7 @@
        
     }
     .schedules-main-left-cont{
-        margin-top: 5%;
+        margin-top: 8%;
         width: 100%;
     }
     .schedules-banner-cont{
@@ -150,6 +163,9 @@
         width: 100%;
         flex:auto;
         overflow-y: scroll;
+    }
+    .schedules-calender-filter-options{
+        width: 80%;
     }
     
 }

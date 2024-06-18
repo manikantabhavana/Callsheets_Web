@@ -1,8 +1,21 @@
-import React from 'react'
+import React ,{ useState }from 'react';
+
 import './HeaderBar.css';
 import { Icon } from '@iconify/react';
 import ProfilePhoto from "../../../Assets/Images/SignupBg.png";
+
 function HeaderBar() {
+  const [showDateInput, setShowDateInput] = useState(false);
+
+  const handleDateIconClick = () => {
+    
+    setShowDateInput(true);
+    // Delay focus to allow the input to be visible
+    setTimeout(() => {
+      document.getElementById('date-input').focus();
+    }, 0);
+  };
+
   return (
     <div className='header-bar-main-container'>
 
@@ -17,7 +30,8 @@ function HeaderBar() {
         <div className='header-date-icon-cont'>
         
 
-            <span className='date-icon-at-bar'   ></span>
+            <span className='date-icon-at-bar' onClick={handleDateIconClick}></span>
+            {showDateInput && <input type="date" id="date-input" />}
             
 
         </div>
