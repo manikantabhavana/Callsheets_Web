@@ -1,121 +1,94 @@
-/* .invitations-main-cont{
+
+ .invitations-main-cont{
+    /* width: 100%; */
+  display: flex;
+  flex-direction: column;
+  align-self: center;  
+ } 
+ .invitations-main-cont .web-image{
+    /* width: 90%;
+    align-self: center; */
+    display: none;
+ }
+ .invitations-main-cont .invt-items{
     display: flex;
-    flex-direction: column;
-    align-self: center  ;
-}
-.invitations-main-cont .invt-items{
-    display: flex;
-    align-self: center;
     justify-content: space-around;
+    /* border-bottom: 0.4px solid #4E4E4E; */
+    /* margin: 0 4rem; */
     box-shadow: 0px 0px 2px 0px #00000040;
-    padding:0% 2%;
-    width: 66%;
- 
-
-}
-.invitations-main-cont .invt-items p{
     font-size: 1.3rem;
-    font-weight: 500;
-    cursor: pointer;
-    
-}
-.invitations-main-cont .invt-items .active{
-  
-   border-bottom: 3px solid black;
-}
 
-.invitations-main-cont .invt-items .inactive{
-    border: none;
-}
-.invitations-main-cont .out-cont {
-    width: 70%;
-    height: 75vh;
-    align-self: center;
+ }
+ .invitations-main-cont .invt-items .active{
+    border-bottom: 2px solid black;
+ }
+ .invitations-main-cont .request-container{
     overflow-y: scroll;
-}
-.received-main-cont{
+    height: 80vh;
+ }
+ .invitations-main-cont .request-container::-webkit-scrollbar{
+    display: none;
+ }
+ .invitations-main-cont .request-container .request-items{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    box-shadow: 0px 0px 3px 0px #00000040;
+    /* margin: 0 3.9rem; */
     border: 2px solid #E8E5E5;
-}
-.received-main-cont .container{
-    display: flex;
-    justify-content: space-between;
-    flex: 0.5;
-    padding: 2% 3% 0 0;
-}
-.received-main-cont .container img{
+    padding: 2% 3%;
+  
 
-        padding: 2%;
-        width: 9rem;
-}
-.received-main-cont .container .content{
-    margin: 0 0 0 -5%;
-} 
-.received-main-cont .container .content p{
-    font-size: 1.3rem;
-    color:#595454 ;
-}
-.received-main-cont .btns{
-    flex: 0.3;
+ }
+ .invitations-main-cont .request-container .request-items P{
     align-self: center;
-   
-}
-.received-main-cont .btns .acpt{
+    font-size: 1.2rem;
+    
+ }
+ .invitations-main-cont .request-container .request-items .req-btn{
+    width: 8rem;
+   align-self: center;
+   padding: 1%;
+   background: #46C7D1;
+   color: white;
+   border: none;
+   border-radius: 0.5rem;
+   font-size: 1.2rem;
+   cursor: pointer;
 
-    padding: 3% 10%;
-    margin: 8% 3% 0 0%;
-    background-color: #46C7D1;
-    color: white;
-    border: none;
-    font-size: 1rem;
-    font-weight: 600;
-    border-radius: 0.5rem;
-    cursor: pointer;
+ }
 
-}
-.received-main-cont .btns .cancel{
-    padding: 2% 9%;
-    margin: 8% 3% 0 0%;
-    border-radius: 0.5rem;
-    font-size: 1rem;
-    font-weight: 600;
-    cursor: pointer;
-} */
  
 @media screen and (max-width:890px){
    
 
     .invitations-main-cont{
-      
+      /* background-image: url("../../Assets/Images/Invitations/InvtMblBg.png");
+      background-repeat: no-repeat; */
      }
      .invitations-main-cont .invt-items{
         display: flex;
         align-self: center;
         justify-content: space-around;
         box-shadow: 0px 0px 2px 0px #00000040;
-        /* padding:0% 2%; */
-        /* width: 100%; */
-        z-index: 10;
-        position:fixed;
-        top: 14rem;
         width: 100%;
-        z-index: 10;
+      
        
      }
+     .invitations-main-cont .web-image{
+        display: block;
+     }
      .invitations-main-cont .request-container{
-        margin-top: 25rem;
-        height: 80vh;
+
+        height: 70vh;
         overflow: scroll;
+        padding-bottom: 20%;
      }
      .invitations-main-cont .request-container .request-items{
 
        display: flex;
-       justify-content: space-between;
-       padding: 3%;
+       justify-content: space-around;
+       padding: 7% 5%;
        align-items: center;
-    
-      
        
      }
      .invitations-main-cont .request-container .request-items img{
@@ -123,6 +96,7 @@
      }
      .invitations-main-cont .request-container .request-items p{
         text-align: center;
+        padding: 2%;
      }
 
 }

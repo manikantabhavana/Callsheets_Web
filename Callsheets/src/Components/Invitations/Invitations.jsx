@@ -1,7 +1,10 @@
 import React,{useState} from 'react';
 import "./Invitations.css";
-import callsheet from '../../Assets/Images/Invitations/CallSheetImage.png'
+import { Icon } from '@iconify/react';
+import webimage from '../../Assets/Images/Invitations/InvtMblBg.png'
 import image from '../../Assets/Images/Invitations/ActorImage.png'
+import Search from '../Search/Search';
+import { useNavigate } from 'react-router-dom';
 // import { Outlet } from 'react-router-dom';
 
 function Invitations() {
@@ -22,6 +25,7 @@ function Invitations() {
   ]
   const [isActiveBtn,setIsActiveBtn]=useState(null);
   const [btnContent,setBtnContent]=useState('Accept')
+
   
   const handlebtn=(index)=>{
     setIsActiveBtn(index)
@@ -36,10 +40,23 @@ function Invitations() {
         setBtnContent("Accept")
     }
   }
-
+ const navigate=useNavigate()
+    
+  const goToSearch=()=>{
+    navigate('../../search')
+  }
   return (
    <>
         <div className='invitations-main-cont'>
+            {/* <img src={webimage} alt="image" className='web-image'/> */}
+            {/* <Search/> */}
+            <div className='chat-header-cont'>
+          <div className='search-bar-chat'>
+                <Icon icon="ri:search-line" />
+                <input type='search' placeholder='search here' readOnly onClick={goToSearch}/>
+
+            </div>
+      </div>
 
           <div className='invt-items'> 
             <p className={`${isActiveBtn === null ? "active":""}`} onClick={()=>{handlebtn(null)}}>Received</p>
@@ -52,7 +69,7 @@ function Invitations() {
                     <div className='request-items'>
                     <img src={i.img} alt="img" />
                     <p>Callsheet access request sent to <span>{i.name}</span></p>
-                    <button>{i.btn2}</button>
+                    <button className='req-btn'>{i.btn2}</button>
                     </div>
                   
                   </>
