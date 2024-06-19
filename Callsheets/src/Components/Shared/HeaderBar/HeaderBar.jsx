@@ -3,8 +3,10 @@ import React ,{ useState }from 'react';
 import './HeaderBar.css';
 import { Icon } from '@iconify/react';
 import ProfilePhoto from "../../../Assets/Images/SignupBg.png";
+import { useNavigate } from 'react-router-dom';
 
 function HeaderBar() {
+  const navigate = useNavigate()
   const [showDateInput, setShowDateInput] = useState(false);
 
   const handleDateIconClick = () => {
@@ -16,6 +18,11 @@ function HeaderBar() {
     }, 0);
   };
 
+  const goToSearch=()=>{
+    navigate('search')
+  }
+
+
   return (
     <div className='header-bar-main-container'>
 
@@ -23,6 +30,7 @@ function HeaderBar() {
             <Icon icon="ri:search-line" className='search-icon-at-bar'/>
             <input type='search'
              placeholder='shedules, artists'
+             onClick={goToSearch}
              />
 
         </div>
