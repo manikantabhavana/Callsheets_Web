@@ -1,0 +1,136 @@
+.create-schedule-main-cont{
+    width: 100%;
+    height: 92vh;
+    flex-direction: column;
+    
+
+}
+
+.create-schedule-header{
+    width: 89%;
+    padding:2.5% 5%;
+    background-color:#47C7D2 ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.create-schedule-header .create-schedule-header-icon{
+    font-size: 2rem;
+    cursor: pointer;
+    color:white;
+}
+
+.create-schedule-header button{
+    background-color: white;
+    border:none;
+    border-radius: 2rem;
+    padding:2% 5%;
+    color: #47C7D2;
+    font-weight: 550;
+    cursor: pointer;
+    transition: transform 0.5s ease-in-out;
+
+}
+.create-schedule-header button:hover{
+    transform: scale(1.1);
+}
+
+.create-schedule-cont{
+    height: 75%;
+    background-color: white;
+    display: flex;
+    gap:5%;
+    flex-direction: column;
+    width: 89%;
+    padding: 5%;
+    
+    align-items: self-start;
+}
+
+
+.create-schedule-input-title-cont,.create-schedule-location-cont,.create-schedule-description-cont,.create-schedule-production-cont{
+    display: flex;
+    width: 100%;
+    gap:2.5%;
+    align-items: center;
+    border-bottom: 1.5px solid rgb(185, 185, 185);
+}
+
+.create-schedule-input-title-cont span{
+    font-size: 1.5rem;
+}
+
+.create-schedule-input-title-cont input,
+.create-schedule-location-cont input,
+.create-schedule-description-cont input,
+.create-schedule-production-cont input
+{
+   
+    outline: none;
+    width: 60%;
+    padding:2%;
+    border: none;
+    font-size: 1.2rem;
+
+}
+
+.create-schedule-cont input[type='text']::placeholder{
+    font-size: 1rem;
+    font-weight: 550;
+    color: rgb(181, 181, 181);
+
+}
+
+.create-schedule-date-time-cont{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    border-bottom: 1.5px solid rgb(185, 185, 185);
+}
+
+.create-schedule-date-time-header{
+    display: flex;
+    font-weight: 550;
+    font-size: 1.5rem;
+    align-items: center;
+    gap:2.5%;
+}
+
+.create-schedule-icon{
+    font-size: 1.5rem;
+}
+
+.create-schedule-date-time{
+    display: flex;
+    flex-direction: column;
+    padding:0 6.25%;
+
+}
+
+.create-schedule-start-time,.create-schedule-end-time{
+    display: flex;
+    line-height: 0;
+    align-items: center;
+    font-weight: 550;
+    gap:10%;
+    color:rgb(0, 0, 0);
+}
+
+
+@media screen and (max-width:890px){
+    .create-schedule-header {
+        padding: 5%;
+        width: 90%;
+    }
+
+    .create-schedule-header button{
+        font-size: 1.25rem;
+    }
+
+    .create-schedule-cont{
+        width: 90%;
+    }
+    
+}
+

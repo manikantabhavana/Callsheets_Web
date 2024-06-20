@@ -1,0 +1,136 @@
+.update-schedule-main-cont{
+    width: 100%;
+    height: 92vh;
+    flex-direction: column;
+    
+
+}
+
+.update-schedule-header{
+    width: 89%;
+    padding:2.5% 5%;
+    background-color:#47C7D2 ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.update-schedule-header .update-schedule-header-icon{
+    font-size: 2rem;
+    cursor: pointer;
+    color:white;
+}
+
+.update-schedule-header button{
+    background-color: white;
+    border:none;
+    border-radius: 2rem;
+    padding:2% 5%;
+    color: #47C7D2;
+    font-weight: 550;
+    cursor: pointer;
+    transition: transform 0.5s ease-in-out;
+
+}
+.update-schedule-header button:hover{
+    transform: scale(1.1);
+}
+
+.update-schedule-cont{
+    height: 75%;
+    background-color: white;
+    display: flex;
+    gap:5%;
+    flex-direction: column;
+    width: 89%;
+    padding: 5%;
+   
+    align-items: self-start;
+}
+
+
+.update-schedule-input-title-cont,.update-schedule-location-cont,.update-schedule-description-cont,.update-schedule-production-cont{
+    display: flex;
+    width: 100%;
+    gap:2.5%;
+    align-items: center;
+    border-bottom: 1.5px solid rgb(185, 185, 185);
+}
+
+.update-schedule-input-title-cont span{
+    font-size: 1.5rem;
+}
+
+.update-schedule-input-title-cont input,
+.update-schedule-location-cont input,
+.update-schedule-description-cont input,
+.update-schedule-production-cont input
+{
+   
+    outline: none;
+    width: 60%;
+    padding:2%;
+    border: none;
+    font-size: 1.2rem;
+
+}
+
+.update-schedule-cont input[type='text']::placeholder{
+    font-size: 1rem;
+    font-weight: 550;
+    color: rgb(181, 181, 181);
+
+}
+
+.update-schedule-date-time-cont{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    border-bottom: 1.5px solid rgb(185, 185, 185);
+}
+
+.update-schedule-date-time-header{
+    display: flex;
+    font-weight: 550;
+    font-size: 1.5rem;
+    align-items: center;
+    gap:2.5%;
+}
+
+.update-schedule-icon{
+    font-size: 1.5rem;
+}
+
+.update-schedule-date-time{
+    display: flex;
+    flex-direction: column;
+    padding:0 6.25%;
+
+}
+
+.update-schedule-start-time,.update-schedule-end-time{
+    display: flex;
+    line-height: 0;
+    align-items: center;
+    font-weight: 550;
+    gap:10%;
+    color:rgb(0, 0, 0);
+}
+
+
+@media screen and (max-width:890px){
+    .update-schedule-header {
+        padding: 5%;
+        width: 90%;
+    }
+
+    .update-schedule-header button{
+        font-size: 1.25rem;
+    }
+
+    .update-schedule-cont{
+        width: 90%;
+    }
+    
+}
+

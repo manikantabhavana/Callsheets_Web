@@ -1,0 +1,134 @@
+.view-schedule-main-cont{
+    width: 100%;
+    height: 92vh;
+    flex-direction: column;
+   
+    
+
+}
+
+.view-schedule-header{
+    width: 89%;
+    padding:2.5% 5%;
+    background-color:#47C7D2 ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.view-schedule-edit-delete{
+    display: flex;
+    align-items: center;
+    gap:2rem;
+}
+
+.view-schedule-header .view-schedule-header-icon{
+    font-size: 2rem;
+    cursor: pointer;
+    color:white;
+}
+
+
+
+
+.view-schedule-cont{
+    overflow-y: scroll;
+   
+    height: 75%;
+    background-color: white;
+    display: flex;
+    gap:2.5%;
+    flex-direction: column;
+    width: 89%;
+    padding: 5%;
+    align-items: self-start;
+}
+
+.view-schedule-cont::-webkit-scrollbar{
+    display: none;
+}
+
+
+.view-schedule-input-title-cont{
+    display: flex;
+    width: 100%;
+    gap:2.5%;
+    align-items: center;
+    border-bottom: 1.5px solid rgb(185, 185, 185);
+}
+
+.view-schedule-input-title-cont{
+    font-size: 1.5rem;
+    line-height: 0;
+    font-weight: 550;
+}
+
+.view-schedule-location-cont ,.view-schedule-description-cont,.view-schedule-production-cont{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    gap:3%;
+    border-bottom: 1.5px solid rgb(185, 185, 185);
+}
+
+.view-schedule-location-cont div,.view-schedule-description-cont div,.view-schedule-production-cont div{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    width: 90%;
+}
+.view-schedule-location-cont p,.view-schedule-description-cont p,.view-schedule-production-cont p{
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 1.5;
+
+    
+}
+.view-schedule-location-cont p:nth-child(1),.view-schedule-description-cont p:nth-child(1),.view-schedule-production-cont p:nth-child(1){
+    font-weight: 550;
+}
+
+
+.view-schedule-date-time-cont{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    border-bottom: 1.5px solid rgb(185, 185, 185);
+}
+
+
+.view-schedule-icon{
+    font-size: 1.5rem !important;
+    
+}
+
+
+
+.view-schedule-start-time,.view-schedule-end-time{
+    display: flex;
+    line-height: 0.5;
+    align-items: center;
+    font-weight: 550;
+    gap:2.5%;
+    color:rgb(0, 0, 0);
+}
+
+
+@media screen and (max-width:890px){
+    .view-schedule-header {
+        padding: 5%;
+        width: 90%;
+    }
+
+    .view-schedule-header button{
+        font-size: 1.25rem;
+    }
+
+    .view-schedule-cont{
+        width: 90%;
+        height: 90%;
+    }
+    
+}
+

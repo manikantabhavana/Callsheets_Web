@@ -21,6 +21,11 @@ import ReVerification from './Components/Auth/Verification/ReVerification';
 import CompleteVerification from './Components/Auth/Verification/CompleteVerification';
 import Search from './Components/Search/Search'
 import SearchMenu from './Components/SearchMenu/SearchMenu'
+import SchedulesList from './Components/Schedules/SchedulesList'
+import CreateSchedule from './Components/Schedules/CreateSchedule/CreateSchedule'
+import UpdateSchedule from './Components/Schedules/updateSchedule/UpdateSchedule'
+import ViewSchedule from './Components/Schedules/ViewSchedule/ViewSchedule'
+import Chatting from './Components/Chat/Chatting'
 
 function App() {
 
@@ -57,16 +62,28 @@ function App() {
 
 
                 <Route path='schedules' element={<MainPage/>}>
-                  <Route path ='' element={<Schedules/>}/>
+                  <Route path ='' element={<Schedules/>}>
+                      <Route path='' element={<SchedulesList/>}/>
+                      <Route path='create-schedule' element={<CreateSchedule/>}/>
+                      <Route path='view-schedule' element={<ViewSchedule/>}/>
+                      <Route path ='update-schedule' element={<UpdateSchedule/>}/>
+                  </Route>
                   <Route path ='personal' element={<Profile/>}/>
                   <Route path ='chat' element={<Chat/>}/>
                   <Route path ='invitations' element={<Invitations/>}/>
-                  
                   <Route path ='search' element={<SearchMenu/>}/>
                 </Route>
                 <Route path='search' element={<Search/>}/>
 
 
+                {/* mobile-device-routes */}
+
+                <Route path='create-schedule-now' element={<CreateSchedule/>} />
+                <Route path='view-schedule-now' element={<ViewSchedule/>} />
+                <Route path='update-schedule-now' element={<UpdateSchedule/>} />
+                
+
+                <Route path='schedules/chat/chat-now' element={<Chatting/>}/>
 
 
 

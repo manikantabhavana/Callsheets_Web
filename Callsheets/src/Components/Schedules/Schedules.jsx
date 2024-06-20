@@ -5,7 +5,7 @@ import SchedulesList from './SchedulesList';
 import Callender from './Callender';
 import ProfilePhoto from "../../Assets/Images/SignupBg.png";
 import Logo from "../../Assets/Images/logo.jpg";
-import { useNavigate } from 'react-router-dom';
+import { Outlet, useNavigate } from 'react-router-dom';
 
 function Schedules() {
   const navigate=useNavigate();
@@ -105,7 +105,7 @@ function Schedules() {
         </div>
 
       <div className='schedules-cont'>
-          <SchedulesList/>
+          <Outlet/>   
       </div>
 
         

@@ -58,6 +58,12 @@
     border-radius: 0.5rem;
     padding:2%;
     color: white;
+    cursor: pointer;
+}
+
+.schedule-title p:hover{
+    background-color: #6bd4dc;
+
 }
 
 .add-schedule-cont{
