@@ -121,6 +121,8 @@
 @media screen and (max-width:890px){
     .update-schedule-header {
         padding: 5%;
+        position: fixed;
+        top:0;
         width: 90%;
     }
 
@@ -130,6 +132,7 @@
 
     .update-schedule-cont{
         width: 90%;
+        margin-top: 20% ;
     }
     
 }

@@ -122,6 +122,8 @@
     .create-schedule-header {
         padding: 5%;
         width: 90%;
+        position: fixed;
+        top:0;
     }
 
     .create-schedule-header button{
@@ -130,6 +132,7 @@
 
     .create-schedule-cont{
         width: 90%;
+        margin-top: 20%;
     }
     
 }

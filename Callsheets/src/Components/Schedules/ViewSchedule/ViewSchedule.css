@@ -119,6 +119,8 @@
     .view-schedule-header {
         padding: 5%;
         width: 90%;
+        position: fixed;
+        top:0;
     }
 
     .view-schedule-header button{
@@ -127,6 +129,7 @@
 
     .view-schedule-cont{
         width: 90%;
+        margin-top: 16%;
         height: 90%;
     }
     

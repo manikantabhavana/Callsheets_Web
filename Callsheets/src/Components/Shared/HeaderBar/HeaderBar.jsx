@@ -4,10 +4,12 @@ import './HeaderBar.css';
 import { Icon } from '@iconify/react';
 import ProfilePhoto from "../../../Assets/Images/SignupBg.png";
 import { useNavigate } from 'react-router-dom';
+import Notifications from '../../Notifications/Notifications';
 
 function HeaderBar() {
   const navigate = useNavigate()
   const [showDateInput, setShowDateInput] = useState(false);
+  const [showNotifications,setShowNotifications]=useState(false);
 
   const handleDateIconClick = () => {
     
@@ -20,6 +22,15 @@ function HeaderBar() {
 
   const goToSearch=()=>{
     navigate('search')
+  };
+  const goToNotifications=()=>{
+    if(showNotifications===false){
+      setShowNotifications(true)
+    }
+    else{
+      setShowNotifications(false)
+    }
+    
   }
 
 
@@ -43,7 +54,7 @@ function HeaderBar() {
             
 
         </div>
-        <Icon icon="mdi:bell-notification" className='bell-icon-at-bar'/>
+        <Icon icon="mdi:bell-notification" className='bell-icon-at-bar' onClick={goToNotifications}/>
 
        
           
@@ -55,7 +66,9 @@ function HeaderBar() {
                     <span className='artist-type'>Actor</span></p>
                 </div>
         </div>
-
+        <div className={`notifications-at-bar ${showNotifications==true?'active':''}`}>
+            <Notifications/>
+        </div>
 
 
     </div>

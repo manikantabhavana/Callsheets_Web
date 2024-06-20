@@ -191,10 +191,9 @@
 }
 
 .message-input{
-    background-color: rgb(222, 222, 222);
+    background-color:#bae9ef;
     border-radius: 2rem;
     width: 95%;
-
     padding: 1%;
     padding-left: 2%;
     display: flex;
@@ -286,22 +285,52 @@
         height: 100vh;
     }
 
+    .chating-header-bar{
+        position: fixed;
+        top:0;
+        padding:0% 3%;
+        width: 95%;
+        gap:3%;
+       
+    }
+    .chating-header-icon{
+        font-size: 2rem;
+    }
+    .chating-header-bar img{
+        width: 3rem;
+        height: 3rem;
+    }
+    .chat-name{
+        font-size: 1.5rem;
+    }
+
+  
+
     .chating-cont{
+        margin-top: 20%;
         padding-bottom: 18%;
     }
 
     .message-input-cont{
-        position: absolute;
+        position: fixed;
        background-color: transparent;
         bottom: 0% !important;
-        width: 90%;
-        margin-left: -5%;
+        width: 100%;
+        margin-left: -9.5%;
     }
 
 
     .message-input{
-        padding-left: 5%;
-        width: 93%;
+        padding: 2% 0;
+        padding-left:5%;
+        width: 94%;
+    }
+    .message-input input{
+        width: 90%;
+    }
+
+    .message-send-icon{
+        margin-right: 5%;
     }
 
 

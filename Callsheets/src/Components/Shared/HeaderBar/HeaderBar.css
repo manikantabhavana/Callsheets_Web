@@ -92,6 +92,7 @@
 .bell-icon-at-bar{
     font-size: 1.5rem;
     margin-left: auto;
+    cursor: pointer;
   
   
 }
@@ -148,6 +149,21 @@
     font-weight: 500;
     color:#494545;
     
+}
+
+
+.notifications-at-bar{
+    position: absolute;
+    width:max-content;
+    width: 30%;
+    top:12.25%;
+    right:-30%;
+    z-index: 1001;
+    transition: right 1s ease-in-out;
+}
+
+.notifications-at-bar.active{
+    right: 0%;
 }
 
 
@@ -224,6 +240,7 @@
         border-radius: 50%;
         padding: 2%;
         margin-right: 3%;
+        cursor: pointer;
         
 
     }

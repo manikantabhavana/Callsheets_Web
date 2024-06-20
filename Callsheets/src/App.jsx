@@ -26,6 +26,7 @@ import CreateSchedule from './Components/Schedules/CreateSchedule/CreateSchedule
 import UpdateSchedule from './Components/Schedules/updateSchedule/UpdateSchedule'
 import ViewSchedule from './Components/Schedules/ViewSchedule/ViewSchedule'
 import Chatting from './Components/Chat/Chatting'
+import Notifications from './Components/Notifications/Notifications'
 
 function App() {
 
@@ -72,8 +73,10 @@ function App() {
                   <Route path ='chat' element={<Chat/>}/>
                   <Route path ='invitations' element={<Invitations/>}/>
                   <Route path ='search' element={<SearchMenu/>}/>
+                  <Route path='notifications' element={<Notifications/>}/>
                 </Route>
                 <Route path='search' element={<Search/>}/>
+                
 
 
                 {/* mobile-device-routes */}
